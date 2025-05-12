@@ -1,0 +1,190 @@
+// main: ./style.scss;
+@import "_flex";
+@import "_variable";
+
+
+// @include transition;
+@mixin transition {
+    transition: all 0.3s linear;
+}
+
+// @include opacity;
+@mixin opacity {
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+@mixin wrap($margin, $width) {
+    margin: $margin;
+    width: $width;
+}
+
+@mixin wrapauto($width) {
+    margin: 0 auto;
+    width: $width;
+}
+
+@mixin vhcenter() {
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+}
+
+@mixin column_space-between() {
+    @include flexbox();
+    @include justify-content(space-between);
+}
+
+@mixin fontstyle($size, $weight, $align, $color) {
+    font-size: $size+px;
+    font-size: ($size / 10)+rem;
+    font-weight: $weight;
+    text-align: $align;
+    color: $color;
+}
+
+@mixin fontsize($size) {
+    font-size: $size+px;
+    font-size: ($size/10)+rem;
+}
+
+@mixin placeholderColor($color) {
+    &:placeholder-shown {
+        color: $color;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+
+    &:-moz-placeholder {
+        color: $color;
+        opacity: 1;
+    }
+
+    &::-moz-placeholder {
+        color: $color;
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+@mixin indent($kye) {
+    text-indent: -($kye)+em;
+    margin-left: ($kye)+em;
+}
+
+@media only screen and (max-width: 768px) {
+    @mixin fontstyle($size, $weight, $align, $color) {
+        font-size: ($size/2)+px;
+        font-size: ($size/10/2)+rem;
+    }
+}
+
+
+/* ----------------------------------
+
+mixinでメディアクエリーを定義
+
+------------------------------------- */
+
+@mixin screen-hd {
+    @media screen and (min-width: $hd-min) {
+        @content;
+    }
+}
+
+@mixin screen-hds {
+    @media screen and (max-width: $hd-max) {
+        @content;
+    }
+}
+
+@mixin screen-nothd {
+    @media screen and (max-width: $desktop-max) {
+        @content;
+    }
+}
+
+@mixin screen-nodesktop {
+    @media screen and (max-width: $desktop-max) {
+        @content;
+    }
+}
+
+@mixin screen-nolaptop {
+    @media screen and (max-width: $laptop-max) {
+        @content;
+    }
+}
+
+//767以下
+@mixin screen-notablet {
+    @media screen and (max-width: $tablet-max) {
+        @content;
+    }
+}
+
+@mixin screen-desktop {
+    @media screen and (min-width: $desktop-min) and (max-width: $desktop-max) {
+        @content;
+    }
+}
+
+@mixin screen-laptop {
+    @media screen and (min-width: $laptop-min) and (max-width: $laptop-max) {
+        @content;
+    }
+}
+
+@mixin screen-tablet {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+        @content;
+    }
+}
+
+@mixin screen-landscape {
+    @media screen and (max-width: $landscape-max) {
+        @content;
+    }
+}
+
+@mixin screen-mobile {
+    @media screen and (max-width: $mobile-max) {
+        @content;
+    }
+}
+
+@mixin screen-legacymobile {
+    @media screen and (max-width: $legacymobile-max) {
+        @content;
+    }
+}
+
+
+
+
+//767px以上
+@mixin tb {
+    @media screen and (min-width: $tablet-max) {
+        @content;
+    }
+}
+
+//991px以上
+@mixin m {
+    @media screen and (min-width: $laptop-max) {
+        @content;
+    }
+}
+
+//1280px以上
+@mixin l {
+    @media screen and (min-width: $hd-max) {
+        @content;
+    }
+}

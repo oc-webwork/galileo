@@ -1,0 +1,52 @@
+/* ----------------------------------
+
+01.share
+
+------------------------------------- */
+
+@import "_reset";
+@import "_common";
+@import "_mixin";
+@import "_flex";
+@import "_media";
+
+/* ----------------------------------
+
+01.view
+
+------------------------------------- */
+
+//TOP
+@import "_view_top";
+//お問い合わせ
+@import "_view_contact";
+//オンライン予約
+@import "_view_online";
+//会社案内
+@import "_view_about";
+//利用規約
+@import "_view_terms";
+//おトク情報
+@import "_view_information";
+//記事一覧
+@import "_view_archives";
+//記事
+@import "_view_single";
+//車検の流れ
+@import "_view_flow";
+//店舗情報
+@import "_view_store";
+//LP
+//@import "_view_lp";
+//404
+@import "_view_notfound";
+//simulator
+@import "_view_simulator";
+//mail-setup
+@import "_view_mail-setup";
+//料金案内
+@import "_view_price";
+//おすすめ整備メニュー
+@import "_view_maintenance";
+//ガリレオ車検が選ばれる6つの理由
+@import "_view_reason";

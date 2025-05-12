@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "_variable.css",
+	"sources": [
+		"_variable.scss"
+	],
+	"sourcesContent": [
+		"//screen-hd\n$hd-max: 1280px;\n$hd-min: 1200px;\n//screen-desktop: ;\n$desktop-max: 1199px;\n$desktop-min: 992px;\n//screen-laptop\n$laptop-max: 991px;\n$laptop-min: 768px;\n//screen-tablet\n$tablet-max: 767px;\n$tablet-min: 576px;\n//screen-mobile\n$mobile-max: 575px;\n"
+	],
+	"names": [],
+	"mappings": ""
+}

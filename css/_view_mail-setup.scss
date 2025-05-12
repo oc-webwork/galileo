@@ -1,0 +1,94 @@
+// main: ./style.scss;
+@import "_flex";
+@import "_mixin"; // @include fontstyle(22,normal,center,#808080);
+
+// @include wrapauto(960px);
+.mail-setup {
+    main {
+        .sec01 {
+            padding-bottom: 30px;
+
+            //screen-nodesktop
+            @include screen-nodesktop {
+                width: 94%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            &__ttl01 {
+                text-align: center;
+                color: #df2522;
+                font-weight: bold;
+                font-size: 2.4rem;
+
+                @include screen-nodesktop {
+                    font-size: 1.6rem;
+                }
+            }
+
+            &__txt01 {
+                font-size: 1.4rem;
+                line-height: 1.8;
+                margin-top: 2rem;
+
+                @include screen-nodesktop {
+                    font-size: 1.2rem;
+                }
+
+            }
+
+            &__box {
+                margin-top: 5rem;
+
+            }
+
+            &__ttl02 {
+                font-weight: bold;
+                font-size: 1.8rem;
+                position: relative;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #878787;
+                color: #07458d;
+                padding-left: 2rem;
+
+                @include screen-nodesktop {
+                    font-size: 1.6rem;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0.4rem;
+                    left: 0;
+                    width: 0.6rem;
+                    height: 2rem;
+                    margin: auto;
+                    background-color: #07458d;
+
+                    top: 0.2rem;
+
+
+                }
+            }
+
+            &__txt02 {
+                margin-top: 1.5rem;
+                font-size: 1.4rem;
+                line-height: 1.8;
+
+                @include screen-nodesktop {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .cl-red {
+                color: #df2522;
+            }
+
+
+
+
+        }
+    }
+}

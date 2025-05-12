@@ -1,0 +1,1276 @@
+// main: ./style.scss;
+@import "_flex";
+@import "_mixin";
+
+.simulator {
+
+  %radius {
+    border-radius: 10px;
+
+    @include screen-notablet {
+      border-radius: 5px;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  & .inner-m {
+    @include screen-nolaptop {
+      width: 90%;
+    }
+  }
+
+  .outer {
+    background-color: #E2EFDC;
+    margin-top: -40px;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+
+    @include screen-notablet {
+      margin-top: -20px;
+      padding-top: 2rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  .ttl {
+    width: 62rem;
+    margin: 0 auto 2rem;
+
+    @include screen-notablet {
+      width: 100%;
+    }
+
+    & img {
+      width: 100%;
+    }
+
+    &__txt {
+      @include fontsize(24);
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-weight: bold;
+
+      @include screen-notablet {
+        @include fontsize(12);
+        text-align: left;
+      }
+    }
+  }
+
+  .inner {
+    border: 8px solid #42A434;
+    padding: 2.5rem 2rem;
+    background-color: #fff;
+
+    @include screen-notablet {
+      padding: 1.5rem 0.9rem 0;
+    }
+
+    &--btm {
+      border-top: none;
+
+      @include screen-notablet {
+        padding: 1rem 0.9rem 0.5rem;
+      }
+    }
+  }
+
+  .box {
+    margin-bottom: 4.5rem;
+
+    @include screen-notablet {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .box2 {
+    margin-bottom: 1rem;
+  }
+
+  .h2 {
+    @include fontsize(24);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #42A434;
+    margin-bottom: 2rem;
+    font-weight: bold;
+
+    @include screen-notablet {
+      @include fontsize(10);
+      padding-bottom: 0.3rem;
+      border-width: 1px;
+      margin-bottom: 1.3rem;
+    }
+
+    &__num {
+      @include fontsize(30);
+      display: inline-block;
+      margin-right: 3rem;
+      font-weight: bold;
+
+      @include screen-notablet {
+        @include fontsize(16);
+        margin-right: 1.2rem;
+      }
+
+      &::before {
+        content: '';
+        display: inline-block;
+        height: 2rem;
+        width: 1rem;
+        background-color: #42A434;
+        margin-right: 1.2rem;
+
+        @include screen-notablet {
+          height: 1.2rem;
+          width: 0.5rem;
+          margin-right: 0.6rem;
+        }
+      }
+    }
+
+    &__att {
+      @include fontsize(12);
+
+      @include screen-notablet {
+        //767px以下
+        display: block;
+        @include fontsize(10);
+        margin-bottom: 5px;
+      }
+    }
+
+    &--ex {
+      border-bottom: none;
+      margin-bottom: 0;
+
+      @include screen-notablet {
+        margin-bottom: 0.3rem;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  %hover {
+    opacity: 0.7;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  %active {
+    box-shadow: none;
+  }
+
+  .model {
+    @include flexbox();
+    @include justify-content(space-between);
+    text-align: center;
+    padding: 0;
+
+    @include screen-nolaptop {
+      @include flex-wrap(wrap);
+    }
+
+    @include screen-notablet {
+      padding: 0 1rem;
+    }
+
+    &__item {
+      @extend %radius;
+      width: 23.5%;
+      border: 4px solid #42A434;
+      padding: 1.5rem 0;
+      box-shadow: 0 5px 0 #338028;
+      margin-bottom: 0;
+
+      @include screen-nolaptop {
+        width: 49%;
+        margin-bottom: 1.3rem;
+      }
+
+      @include screen-notablet {
+        width: 48%;
+        border-width: 2.6px;
+        box-shadow: 0 3px 0 #338028;
+        padding: 1rem 0;
+      }
+
+      &:hover {
+        @extend %hover;
+      }
+
+      &:last-of-type,
+      &:nth-last-of-type(2) {
+        @include screen-notablet {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    & img {
+      padding: 0 1.5rem;
+    }
+
+    &__txt1 {
+      @include fontsize(24);
+      display: block;
+      font-weight: bold;
+      line-height: 1;
+
+      @include screen-notablet {
+        @include fontsize(16);
+      }
+
+      &--ex {
+        margin-top: 0.5rem;
+        margin-bottom: 2.3rem;
+
+        @include screen-notablet {
+          margin-bottom: 1.7rem;
+        }
+      }
+    }
+
+    &__txt2 {
+      @include fontsize(12);
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+
+      @include screen-notablet {
+        @include fontsize(10);
+        margin-bottom: 0.8rem;
+      }
+    }
+
+    &__txt3 {
+      @include fontsize(14);
+      display: block;
+      line-height: 1.2;
+      margin-top: 0.8rem;
+
+      @include screen-notablet {
+        @include fontsize(10);
+      }
+    }
+  }
+
+  input:checked+.model__item {
+    @extend %active;
+    background-color: #D6EFCB;
+  }
+
+  .course {
+    @include flexbox();
+    @include justify-content(space-between);
+    text-align: center;
+
+    &__item {
+      @extend %radius;
+      width: 49%;
+      border: 4px solid #1D61AC;
+      padding: 1.5rem 0;
+      box-shadow: 0 5px 0 #103966;
+      background-color: #1D61AC;
+      color: #fff;
+
+      @include screen-notablet {
+        width: 48%;
+        border-width: 1.5px;
+        box-shadow: 0 3px 0 #103966;
+      }
+
+      &:hover {
+        @extend %hover;
+      }
+
+      &--ex {
+        background-color: #F17725;
+        border-color: #F17725;
+        box-shadow: 0 5px 0 #803F14;
+
+        @include screen-notablet {
+          box-shadow: 0 3px 0 #803F14;
+        }
+
+        &:hover {
+          @extend %hover;
+        }
+      }
+    }
+
+    &__txt1 {
+      @include fontsize(24);
+      display: block;
+      font-weight: bold;
+
+      @include screen-notablet {
+        @include fontsize(12);
+      }
+    }
+
+    &__txt2 {
+      @include fontsize(32);
+      display: block;
+      font-weight: bold;
+
+      @include screen-notablet {
+        @include fontsize(16);
+      }
+
+      @include screen-legacymobile {
+        @include fontsize(13);
+      }
+    }
+  }
+
+  input:checked+.course__item {
+    @extend %active;
+    color: #1D61AC;
+    background-color: #CCE4FF;
+  }
+
+  input:checked+.course__item--ex {
+    color: #F17725;
+    background-color: #FFF9CC;
+  }
+
+  .discount {
+    @extend %radius;
+    background-color: #1D61AC;
+    box-shadow: 0 5px 0 #000;
+    padding: 0 2rem 2rem;
+
+    @include screen-notablet {
+      box-shadow: 0 3px 0 #000;
+      padding: 0 1rem 1rem;
+    }
+
+    &--ex {
+      background-color: #F17725;
+    }
+
+    &__h1 {
+      @include fontsize(32);
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+
+      @include screen-notablet {
+        @include fontsize(18);
+        margin-bottom: 0.5rem;
+      }
+
+      @include screen-legacymobile {
+        @include fontsize(16);
+      }
+    }
+
+    &__box {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include flex-wrap(wrap);
+      background-color: #fff;
+      padding: 1.3rem 1.3rem 0.5rem;
+
+      @include screen-notablet {
+        display: block;
+        padding: 1rem 0.7rem 1rem;
+      }
+    }
+
+    %icon-base {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 1.5rem;
+      transform: translateY(-50%);
+      background-color: #fff;
+      display: inline-block;
+      width: 1.6rem;
+      height: 1.6rem;
+      border: 1px solid #000;
+
+      @include screen-notablet {
+        width: 0.8rem;
+        height: 0.8rem;
+        left: 0.7rem;
+      }
+    }
+
+    &__item {
+      @extend %radius;
+      width: 49%;
+      border: 2px solid #1D61AC;
+      background-color: #fff;
+      margin-bottom: 0.8rem;
+      padding: 1.5rem 1.5rem 1rem 4.5rem;
+      position: relative;
+
+      @include screen-notablet {
+        width: 100%;
+        display: block;
+        border-width: 1px;
+        margin-bottom: 1rem;
+        padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+      }
+
+      &:nth-of-type(1) {
+        order: 1;
+      }
+
+      &:nth-of-type(2) {
+        order: 3;
+      }
+
+      &:nth-of-type(3) {
+        order: 2;
+      }
+
+      &:nth-of-type(4) {
+        order: 4;
+      }
+
+      &:last-of-type {
+        @include screen-notablet {
+          margin-bottom: 0;
+        }
+      }
+
+      &:hover {
+        @extend %hover;
+      }
+
+      &--check {
+        &::before {
+          @extend %icon-base;
+        }
+      }
+
+      &--radio {
+        &::before {
+          @extend %icon-base;
+          border-radius: 50%;
+        }
+      }
+
+      &--ex {
+        border-color: #FFA337;
+
+        &:hover {
+          @extend %hover;
+        }
+
+        &:nth-of-type(1) {
+          order: 1;
+        }
+
+        &:nth-of-type(2) {
+          order: 3;
+        }
+
+        &:nth-of-type(3) {
+          order: 5;
+        }
+
+        &:nth-of-type(4) {
+          order: 7;
+        }
+
+        &:nth-of-type(5) {
+          order: 2;
+        }
+
+        &:nth-of-type(6) {
+          order: 4;
+        }
+
+        &:nth-of-type(7) {
+          order: 6;
+        }
+
+        &:nth-of-type(8) {
+          order: 8;
+        }
+      }
+    }
+
+    &__h2 {
+      @include fontsize(24);
+      font-weight: bold;
+      color: #1D61AC;
+      display: block;
+
+      @include screen-notablet {
+        @include fontsize(16);
+      }
+
+      &--ex {
+        color: #F17725;
+      }
+    }
+
+    &__txt1 {
+      @include fontsize(15);
+      display: block;
+
+      @include screen-notablet {
+        @include fontsize(10);
+      }
+    }
+
+    &__icon {
+      @include fontsize(24);
+      background-color: #fff;
+    }
+  }
+
+  input:checked+.discount__item {
+    background-color: #CCE4FF;
+  }
+
+  input:checked+.discount__item--ex {
+    background-color: #FFF9CC;
+  }
+
+  input:checked+.discount__item--check {
+    &::after {
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: #E02522;
+      font-size: 2.2rem;
+      position: absolute;
+      top: 48%;
+      left: 1.3rem;
+      transform: translateY(-50%);
+      display: block;
+
+      @include screen-notablet {
+        left: 0.7rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  input:checked+.discount__item--radio {
+    &::after {
+      content: '';
+      display: block;
+      background-color: #E02522;
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 1.7rem;
+      transform: translateY(-50%);
+
+      @include screen-notablet {
+        width: 0.6rem;
+        height: 0.6rem;
+        left: 0.9rem;
+      }
+    }
+  }
+
+  .option {
+    @include flexbox();
+    @include justify-content(space-between);
+
+    @include screen-nolaptop {
+      display: block;
+    }
+
+    &__item {
+      @extend %radius;
+      width: 32%;
+      border: 4px solid #42A434;
+      padding: 1.5rem 0;
+      box-shadow: 0 5px 0 #338028;
+      text-align: center;
+
+      @include screen-nolaptop {
+        width: 100%;
+        display: block;
+        margin-bottom: 1.3rem;
+      }
+
+      @include screen-notablet {
+        border-width: 2px;
+        padding: 1rem 0 0.8rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 3px 0 #338028;
+      }
+
+      &:hover {
+        @extend %hover;
+      }
+
+      &--none {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        height: auto;
+
+        @include screen-nolaptop {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+          height: 15rem;
+        }
+
+        @include screen-notablet {
+          height: 10rem;
+        }
+      }
+    }
+
+    &__h1 {
+      @include fontsize(32);
+      display: block;
+      font-weight: bold;
+      color: #42A434;
+      line-height: 1.1;
+
+      @include screen-notablet {
+        @include fontsize(16);
+      }
+
+      &--ex {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    &__txt1 {
+      @include fontsize(15);
+      display: block;
+      font-weight: bold;
+      line-height: 1.3;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+
+      @include screen-notablet {
+        @include fontsize(11);
+      }
+    }
+
+    &__txtbox {
+      @include flexbox();
+      @include flex-wrap(wrap);
+      @include justify-content(center);
+    }
+
+    &__txtbox2 {
+      @include fontsize(10);
+      text-align: left;
+      display: block;
+
+      & span {
+        display: block;
+      }
+
+      &--short {
+        margin-left: 3.5rem;
+
+        @include screen-notablet {
+          margin-left: 2rem;
+        }
+      }
+
+      &--wide {
+        margin-left: 1rem;
+
+        @include screen-legacymobile {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__txt3 {
+      @include fontsize(18);
+      font-weight: bold;
+      display: block;
+
+      @include screen-notablet {
+        @include fontsize(14);
+      }
+
+      &--ex {
+        margin-top: 4.5rem;
+
+        @include screen-nolaptop {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__num {
+      @include fontsize(36);
+      color: #DF2522;
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      margin-left: 0.8rem;
+
+      @include screen-notablet {
+        @include fontsize(24);
+      }
+    }
+
+    &__red {
+      color: #DF2522;
+      font-weight: bold;
+    }
+
+    &__btn-outer {
+      display: none;
+
+      @include screen-nolaptop {
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__btn {
+      @extend %radius;
+      display: none;
+
+      @include screen-nolaptop {
+        @include fontsize(12);
+        display: block;
+        font-weight: bold;
+        color: #fff;
+        background-color: #42A434;
+        padding: 1.5rem 0;
+        margin: 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      @include screen-legacymobile {
+        @include fontsize(10);
+      }
+
+      & i {
+        @include fontsize(18);
+        margin-left: 1rem;
+        vertical-align: bottom;
+
+        @include screen-notablet {
+          margin-left: 0.8rem;
+        }
+      }
+
+      &--ex {
+        @include screen-nolaptop {
+          border-radius: 0 !important;
+          margin: 0 -1rem 0;
+          width: calc(100% + 2rem);
+        }
+      }
+    }
+
+    .active.option__btn {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    // Vue.js設定
+    .slide-enter-active,
+    .slide-leave-active {
+      transition: height 0.4s ease-in-out;
+    }
+  }
+
+  input:checked+.option__item {
+    @extend %active;
+    background-color: #D6EFCB;
+  }
+
+  .linkbox {
+    @include flexbox();
+    @include justify-content(space-between);
+
+    @include screen-nolaptop {
+      display: none;
+    }
+
+    &__item {
+      width: 32%;
+      text-align: center;
+    }
+
+    &__btn {
+      background-color: transparent;
+      border: none;
+      margin: 0 auto;
+      @include fontsize(14);
+      line-height: 1.4;
+      font-weight: bold;
+
+      & i {
+        margin-left: 0.5rem;
+        color: #DF2522;
+      }
+
+      &:hover {
+        @extend %hover;
+      }
+    }
+  }
+
+  .total {
+    @include flexbox();
+    @include flex-wrap(nowrap);
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    border-bottom: 1px solid #000;
+
+    @include screen-nolaptop {
+      @include flex-wrap(wrap);
+    }
+
+    &__item {
+      &:nth-of-type(1) {
+        border-left: 1px solid #000;
+        width: 20%;
+
+        @include screen-nolaptop {
+          width: 33.33%;
+        }
+      }
+
+      &:nth-of-type(2) {
+        border-left: 1px solid #000;
+        flex: 1;
+
+        @include screen-nolaptop {
+          width: 33.33%;
+          flex: auto;
+        }
+      }
+
+      &:nth-of-type(3) {
+        border-left: 1px solid #000;
+        flex: 1;
+
+        @include screen-nolaptop {
+          border-right: 1px solid #000;
+          width: 33.33%;
+          flex: auto;
+        }
+      }
+
+      &:nth-of-type(4) {
+        border-left: 1px solid #000;
+        flex: 1;
+
+        @include screen-nolaptop {
+          border-right: 1px solid #000;
+          width: 100%;
+          flex: auto;
+        }
+      }
+
+      &:nth-of-type(5) {
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        flex: 1.5;
+
+        @include screen-nolaptop {
+          width: 100%;
+          flex: auto;
+        }
+      }
+    }
+
+    &__ttl {
+      @include fontsize(16);
+      background-color: #E2EFDC;
+      text-align: center;
+      padding: 1.4rem;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      font-weight: bold;
+
+      @include screen-notablet {
+        @include fontsize(10);
+        padding: 0.4rem 0;
+      }
+    }
+
+    &__price {
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      height: 7rem;
+
+      @include screen-notablet {
+        height: 3rem;
+      }
+
+      &--ex {
+        @include screen-notablet {
+          height: 5rem;
+        }
+      }
+    }
+
+    &__model {
+      @include fontsize(25);
+      font-weight: bold;
+      text-align: center;
+      color: #555555;
+
+      @include screen-notablet {
+        @include fontsize(14);
+      }
+    }
+
+    &__num {
+      @include fontsize(24);
+      font-weight: bold;
+      text-align: center;
+      color: #555555;
+
+      @include screen-notablet {
+        @include fontsize(14);
+      }
+
+      & span {
+        display: inline-block;
+        @include fontsize(36);
+        font-family: 'Barlow Condensed', sans-serif;
+
+        @include screen-notablet {
+          @include fontsize(20);
+        }
+      }
+    }
+
+    &__num2 {
+      @include fontsize(28);
+      font-weight: bold;
+      text-align: center;
+      color: #DF2522;
+
+      @include screen-notablet {
+        @include fontsize(25);
+      }
+
+      & span {
+        @include fontsize(48);
+        display: inline-block;
+        font-family: 'Barlow Condensed', sans-serif;
+
+        @include screen-notablet {
+          @include fontsize(44);
+        }
+      }
+    }
+
+    &__note {
+      @include fontsize(12);
+      line-height: 1.5;
+
+      @include screen-nolaptop {
+        @include flexbox();
+      }
+
+      @include screen-notablet {
+        @include fontsize(10);
+      }
+
+      & span {
+        display: inline-block;
+      }
+    }
+  }
+
+  .btn-more {
+    @include fontsize(30);
+    @extend %radius;
+    width: 46rem;
+    padding: 1.5rem 0;
+    box-shadow: 0 5px 0 #120303;
+    background-color: #DF2522;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+    @include screen-notablet {
+      @include fontsize(18);
+      width: 27.6rem;
+      box-shadow: 0 3px 0 #120303;
+    }
+
+    &::after {
+      content: "\f144";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      transform: translateY(-50%);
+      color: #fff;
+    }
+
+    &:hover {
+      @extend %hover;
+    }
+
+    &__outer {
+      text-align: center;
+      padding-top: 5rem;
+
+      @include screen-notablet {
+        padding-top: 3rem;
+      }
+    }
+  }
+
+  .modal {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &__inner {
+      z-index: 100;
+      padding: 0 3rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+
+      &--long {
+        top: 100px;
+        transform: translateY(0) translateX(-50%);
+        border-bottom: 100px solid transparent;
+      }
+    }
+
+    &__box {
+      position: relative;
+      background-color: #fff;
+      border: 3px solid #42A434;
+      padding: 2rem 2.5rem 1.5rem;
+
+      @include screen-nolaptop {
+        padding: 0.7rem 1rem 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__h1 {
+      color: #42A434;
+      font-weight: bold;
+      @include fontsize(22);
+      margin-bottom: 1.5rem;
+
+      @include screen-nolaptop {
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+
+      @include screen-notablet {
+        @include fontsize(16);
+      }
+    }
+
+    &__note {
+      @include fontsize(12);
+      text-align: left;
+
+      @include screen-nolaptop {
+        margin-bottom: 1rem;
+      }
+
+      @include screen-notablet {
+        @include fontsize(10);
+      }
+    }
+
+    &__btn {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: -40px;
+      right: 0;
+      padding: 0;
+      background-color: transparent;
+      background-image: url('../images/2x/close_btn.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border: none;
+
+      &:hover {
+        @extend %hover;
+      }
+    }
+  }
+
+  .table {
+    width: 100%;
+    margin-bottom: 0.8rem;
+
+    & tr {
+      border-top: 1px solid #878787;
+      border-bottom: 1px solid #878787;
+      height: 5rem;
+
+      @include screen-nolaptop {
+        border-bottom: none;
+        height: 5rem;
+      }
+
+      @include screen-notablet {
+        height: 4rem;
+      }
+
+      &:nth-of-type(even) {
+        border-top: none;
+
+        @include screen-notablet {
+          height: auto;
+        }
+      }
+
+      &:last-of-type {
+        border-bottom: 1px solid #878787;
+      }
+    }
+
+    & td {
+      vertical-align: middle;
+    }
+
+    &__ttl {
+      @include fontsize(12);
+      padding-left: 2rem;
+      font-weight: bold;
+      background-color: #FFF9D3;
+      width: 19rem;
+      text-align: left;
+      line-height: 1.2;
+
+      @include screen-notablet {
+        padding-left: 0.6rem;
+        width: auto;
+      }
+
+      @include screen-legacymobile {
+        @include fontsize(10);
+      }
+
+      &--ex {
+        @include fontsize(16);
+        background-color: inherit;
+      }
+    }
+
+    &__txt {
+      @include fontsize(12);
+      padding-left: 2rem;
+      text-align: left;
+      line-height: 1;
+
+      @include screen-notablet {
+        @include fontsize(10);
+        padding-left: 0.6rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.9rem;
+        width: 100%;
+        line-height: 1.4;
+      }
+    }
+
+    &__num {
+      @include fontsize(14);
+      color: #DF2522;
+      font-weight: bold;
+      text-align: right;
+      padding-right: 2rem;
+
+      @include screen-nolaptop {
+        background-color: #FFF9D3;
+      }
+
+      @include screen-notablet {
+        padding-right: 0.6rem;
+      }
+
+      @include screen-legacymobile {
+        @include fontsize(11);
+      }
+
+      & span {
+        font-family: 'Barlow Condensed', sans-serif;
+        @include fontsize(24);
+        display: inline-block;
+
+        @include screen-legacymobile {
+          @include fontsize(20);
+        }
+      }
+
+      &--ex {
+        @include fontsize(16);
+
+        @include screen-nolaptop {
+          background-color: #FCF1F4;
+        }
+
+        @include screen-notablet {
+          @include fontsize(14);
+        }
+
+        & span {
+          @include fontsize(32);
+
+          @include screen-notablet {
+            @include fontsize(24);
+          }
+        }
+      }
+    }
+
+    &__total {
+      color: #DF2522;
+      background-color: #FCF1F4;
+    }
+  }
+
+  // Vue.js設定
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.3s;
+  }
+
+  // Vue.js設定
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+}

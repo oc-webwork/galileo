@@ -1,0 +1,368 @@
+// main: ./style.scss;
+@import "_flex";
+@import "_mixin"; // @include fontstyle(22,normal,center,#808080);
+// @include wrapauto(960px);
+.flow {
+    main {
+        background-color: #fff9d3;
+        .sec01 {
+            @include screen-nodesktop {
+                width: 94%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .tit {
+                @include wrapauto(880px);
+                @include screen-nolaptop {
+                    //991px以下
+                    width: 100%;
+                }
+            }
+            .read {
+                margin-top: 20px;
+                @include fontstyle(24, 700, center, #000);
+                @include screen-nolaptop {
+                    @include fontsize(16);
+                    margin-top: 10px;
+                }
+            }
+            //read
+        }
+        .step {
+            margin-top: 20px;
+            @include screen-notablet {
+                //767px以下
+                margin-top: 10px;
+            }
+            .inner-m {
+                background-color: #07458d;
+                padding: 40px 0;
+                @include screen-nolaptop {
+                    //991px以下
+                    width: 94%;
+                }
+                @include screen-notablet {
+                    //767px以下
+                    padding: 20px 0;
+                }
+            }
+            &__tit {
+                @include fontstyle(42, 700, center, #fff);
+                line-height: 1;
+                margin-bottom: 35px;
+                @include screen-nolaptop {
+                    //991px以下
+                    @include fontsize(34);
+                }
+                @include screen-notablet {
+                    //767px以下
+                    @include fontsize(28);
+                    margin-bottom: 20px;
+                }
+            }
+            .list {
+                @include wrapauto(860px);
+                @include screen-nolaptop {
+                    //991px以下
+                    width: 90%;
+                }
+                &__item {
+                    position: relative;
+                    display: flex;
+                    @include flex-direction(column);
+                    width: calc(100%);
+                    background-color: #fff;
+                    border-radius: 10px;
+                    padding: 25px 20px;
+                    margin-bottom: 50px;
+                    @include screen-notablet {
+                        //767px以下
+                        padding: 10px 20px;
+                        flex-wrap: wrap;
+                    }
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                    &01 {
+                        .list__lower {
+                            .list__btn {
+                                @include wrapauto(360px);
+                                @include screen-notablet {
+                                    //767px以下
+                                    width: 82.4742268%;
+                                }
+                                a {
+                                    padding-top: 20px;
+                                    padding-bottom: 20px;
+                                    line-height: 1;
+                                    @include screen-notablet {
+                                        //767px以下
+                                        padding-top: 13px;
+                                        padding-bottom: 13px;
+                                    }
+                                    span {
+                                        @include fontsize(20);
+                                        @include screen-notablet {
+                                            //767px以下
+                                            @include fontsize(13);
+                                        }
+                                        &::before {
+                                            width: 17px;
+                                            height: 17px;
+                                            margin-top: -3px;
+                                            @include screen-notablet {
+                                                //767px以下
+                                                width: 13px;
+                                                height: 13px;
+                                            }
+                                        }
+                                        &::after {
+                                            margin-top: -5px;
+                                            font-size: 12px;
+                                            right: 14px;
+                                            @include screen-notablet {
+                                                font-size: 10px;
+                                                right: 11px !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &__icon {
+                    position: absolute;
+                    width: 100px;
+                    top: -20px;
+                    left: -20px;
+                    @include screen-nolaptop {
+                        //991px以下
+                        width: 80px;
+                    }
+                    @include screen-notablet {
+                        //767px以下
+                        width: 50px;
+                        top: -10px;
+                        left: -10px;
+                    }
+                }
+                &__box {
+                    margin-left: auto;
+                    display: flex;
+                    @include justify-content(space-between);
+                    @include screen-notablet {
+                        //767px以下
+                        @include flex-wrap(wrap);
+                    }
+                }
+                &__txtbox {
+                    width: 460px;
+                }
+                &__ttl {
+                    @include fontstyle(40, 700, left, #07458d);
+                    @include screen-nolaptop {
+                        //991px以下
+                        @include fontsize(30);
+                    }
+                    @include screen-notablet {
+                        //767px以下
+                        @include fontsize(20);
+                    }
+                    span {
+                        @include fontstyle(24, 700, left, #df2522);
+                        @include screen-nolaptop {
+                            //991px以下
+                            @include fontsize(18);
+                        }
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(12);
+                        }
+                    }
+                }
+                &__txt {
+                    @include fontstyle(24, 700, left, #000000);
+                    @include screen-nolaptop {
+                        //991px以下
+                        @include fontsize(18);
+                    }
+                    @include screen-notablet {
+                        //767px以下
+                        @include fontsize(12);
+                    }
+                }
+                &__img {
+                    width: 230px;
+                    @include screen-notablet {
+                        //767px以下
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+                &__upper {
+                    width: 730px;
+                    margin-left: auto;
+                    @include screen-nolaptop {
+                        //991px以下
+                        width: 93%;
+                        margin-left: 7%;
+                    }
+                    @include screen-notablet {
+                        //767px以下
+                        width: 90%;
+                        margin-left: 10%;
+                    }
+                }
+                &__lower {
+                    margin-top: 20px;
+                    &__img {
+                        @include wrapauto(620px);
+                        text-align: center;
+                        @include screen-notablet {
+                            //767px以下
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .belongings {
+            margin-top: 30px;
+            .inner-m {
+                @include screen-nolaptop {
+                    //991px以下
+                    width: 94%;
+                }
+            }
+            &__box {
+                background-color: #fff;
+                border-radius: 10px;
+                overflow: hidden;
+                border: 6px solid #07458d;
+            }
+            &__ttl {
+                background-color: #07458d;
+                @include fontstyle(35, 600, center, #fff);
+                line-height: 1;
+                padding: 15px 0;
+                @include screen-nolaptop {
+                    //991px以下
+                    @include fontsize(27);
+                }
+                @include screen-notablet {
+                    //767px以下
+                    @include fontsize(19);
+                    padding: 9px 0 15px;
+                }
+            }
+            .list {
+                @include flexbox();
+                @include align-content(flex-start);
+                @include flex-wrap(wrap);
+                @include flex-direction(column);
+                width: 100%;
+                height: 140px;
+                margin-top: 15px;
+                padding-left: 40px;
+                @include screen-nolaptop {
+                    @include wrapauto(90%);
+                    height: 100px;
+                    margin-top: 20px;
+                }
+                @include screen-laptop {
+                    width: 100%;
+                    height: 110px;
+                }
+                @include screen-mobile {
+                    width: 100%;
+                }
+                &__item {
+                    @include fontstyle(24, 500, left, #000);
+                    text-indent: -1em;
+                    margin-right: 1em;
+                    margin-bottom: 5px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    @include screen-nolaptop {
+                        //991px以下
+                        @include fontsize(18);
+                    }
+                    @include screen-mobile {
+                        @include fontsize(12);
+                    }
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        width: 340px;
+                        //screen-nolaptop
+                        @include screen-nolaptop {
+                            width: 50%;
+                        }
+                        //screen-nolaptop
+                    }
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        width: 290px;
+                        @include screen-nolaptop {
+                            width: 50%;
+                        }
+                        @include screen-tablet {
+                            width: 50%;
+                        }
+                    }
+                    &:nth-child(5),
+                    &:nth-child(6),
+                    &:nth-child(7) {
+                        width: 180px;
+                        @include screen-nolaptop {
+                            width: 50%;
+                        }
+                        @include screen-tablet {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .interest {
+            padding: 50px 0;
+            @include screen-notablet {
+                //767px以下
+                padding: 30px 0;
+            }
+            .inner-m {
+                @include screen-nolaptop {
+                    //991px以下
+                    @include wrapauto(74%);
+                }
+            }
+            &__box {
+                @include flexbox();
+                @include flex-wrap(wrap);
+                justify-content: space-between;
+                @include screen-nolaptop {
+                    //991px以下
+                    @include flex-direction(column);
+                }
+            }
+            &__btn {
+                width: 460px;
+                @include screen-nolaptop {
+                    //991px以下
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                &:first-of-type {
+                    margin-left: 250px;
+                    margin-bottom: 40px;
+                    @include screen-nolaptop {
+                        //991px以下
+                        margin-left: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

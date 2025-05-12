@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/*--------------------------------------
+
+Theme Name: galileo_200226
+Author: OCEAN
+
+--------------------------------------*/
+
+
+@media screen and (max-width: 991px){
+	body.top main .campaign__box__item02__sttl {
+	    width: 72.8%;
+	    margin-top: -50px;
+	    transform: translateX(10px);
+	}
+}

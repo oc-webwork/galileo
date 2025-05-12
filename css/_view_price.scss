@@ -1,0 +1,1102 @@
+// main: ./style.scss;
+@import "_flex";
+@import "_mixin"; // @include fontstyle(22,normal,center,#808080);
+
+// @include wrapauto(960px);
+@include screen-nolaptop {
+    //991px以下
+}
+
+@include screen-mobile {
+    //575px以下
+}
+
+.price {
+
+    .course {
+        padding-bottom: 30px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        &__tit {
+            @include screen-notablet {
+                //767px以下
+            }
+        }
+
+        &__box {
+            @include wrapauto(940px);
+            margin-top: 30px;
+            display: flex;
+            @include justify-content(space-between);
+
+            @include screen-nolaptop {
+                //991px以下
+                width: 100%;
+                @include flex-wrap(wrap);
+                margin-top: 20px;
+            }
+        }
+
+        &__btn {
+            width: calc(100% / 2 - 20px);
+
+            @include screen-notablet {
+                //767px以下
+                width: 100%;
+            }
+
+            &:last-of-type {
+                @include screen-notablet {
+                    //767px以下
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .compare {
+        padding: 40px 0 45px;
+        background-color: #E2F0FF;
+
+        @include screen-notablet {
+            //767px以下
+            padding: 30px 0;
+        }
+
+        &__table {
+            width: 100%;
+        }
+    }
+
+    .price {
+        background-color: #e2efdc;
+        padding: 50px 0 110px;
+
+        @include screen-notablet {
+            //767px以下
+            padding: 30px 0 65px;
+        }
+
+        &__btn {
+            @include wrapauto(460px);
+            margin-top: 40px;
+
+            @include screen-notablet {
+                //767px以下
+                width: 78.8571429%;
+                margin-top: 25px;
+            }
+
+            a {
+                span {
+                    @include fontsize(23);
+
+                    @include screen-nolaptop {
+                        //991px以下
+                        @include fontsize(20);
+                    }
+
+                    @include screen-notablet {
+                        //767px以下
+                        @include fontsize(15);
+                    }
+                }
+            }
+        }
+
+        .quick,
+        .premium {
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 5px;
+            background-color: #fff;
+
+            //screen-nolaptop
+            @include screen-nolaptop {
+                border-width: 5px;
+            }
+
+            &__ttl {
+                span {
+                    @include fontsize(13);
+                    display: block;
+                    margin-top: 10px;
+
+                    @include screen-notablet {
+                        //767px以下
+                        @include fontsize(12);
+                        margin-top: 8px;
+
+                    }
+                }
+            }
+
+            //screen-nolaptop
+            table {
+                border-top: 1px solid #4d4d4d;
+                border-left: 1px solid #4d4d4d;
+                text-align: center;
+                width: 100%;
+
+                //screen-notablet
+                @include screen-notablet {
+                    //767px以下
+                    display: none;
+                }
+
+                //screen-notablet
+                tr {
+
+                    td,
+                    th {
+                        vertical-align: middle;
+                        border-right: 1px solid #4d4d4d;
+                        border-bottom: 1px solid #4d4d4d;
+                        padding: 10px 0;
+                        line-height: 1;
+                    }
+
+                    th {
+                        @include fontstyle(16, bold, center, #000);
+
+                        //screen-mobile
+                        @include screen-mobile {
+                            @include fontsize(12);
+                        }
+
+                        //screen-mobile
+                        span {
+                            @include fontstyle(14, normal, center, #000);
+                            display: block;
+                            margin-top: 5px;
+
+                            //screen-mobile
+                            @include screen-mobile {
+                                @include fontsize(10);
+                            }
+
+                            //screen-mobile
+                        }
+                    }
+
+                    &.thumb {
+                        th {
+                            div {
+                                &:first-of-type {
+                                    @include fontstyle(23, 700, center, #000);
+
+                                    @include screen-nolaptop {
+                                        //991px以下
+                                        @include fontsize(18);
+                                    }
+                                }
+
+                                &:nth-of-type(2) {
+                                    margin-top: 8px;
+                                    @include fontstyle(11, 700, center, #000);
+                                }
+
+                                &:last-of-type {
+                                    margin-top: 10px;
+                                    text-align: center;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    @include align-items(flex-end);
+                                    @include justify-content(center);
+
+                                    em {
+                                        font-weight: 700;
+                                        @include fontsize(22);
+
+                                        @include screen-nolaptop {
+                                            //991px以下
+                                            @include fontsize(18);
+                                        }
+
+                                        span {
+                                            @include fontsize(36);
+                                            display: inline;
+                                            font-weight: 700;
+
+                                            @include screen-nolaptop {
+                                                //991px以下
+                                                @include fontsize(30);
+                                            }
+                                        }
+                                    }
+
+                                    strong {
+                                        @include fontsize(14);
+                                        font-weight: 700;
+
+                                        @include screen-nolaptop {
+                                            //991px以下
+                                            @include fontsize(10);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        td {
+                            text-align: center;
+
+                            img {
+                                width: 165px;
+
+                                @include screen-nolaptop {
+                                    //991px以下
+                                }
+
+                                //screen-mobile
+                                @include screen-mobile {}
+
+                                //screen-mobile
+                            }
+
+                            p {
+                                margin-top: 10px;
+                                @include fontstyle(13, 400, center, #000);
+
+                                @include screen-nolaptop {
+                                    //991px以下
+                                    @include fontsize(10);
+                                }
+                            }
+                        }
+                    }
+
+                    //thumb
+                    &.basic {
+                        th {
+                            background-color: #fff9d3;
+                        }
+
+                        td {
+                            @include fontstyle(22, bold, center, #000);
+                            background-color: #fff9d3;
+
+                            //screen-nolaptop
+                            @include screen-nolaptop {
+                                @include fontsize(18);
+                            }
+
+                            //screen-nolaptop
+                            span {
+                                @include fontsize(20);
+                                font-weight: bold;
+
+                                //screen-nolaptop
+                                @include screen-nolaptop {
+                                    @include fontsize(14);
+                                }
+
+                                //screen-nolaptop
+                            }
+
+                            em {
+                                font-weight: bold;
+                                @include fontsize(42);
+                                color: #e02522;
+
+                                //screen-nolaptop
+                                @include screen-nolaptop {
+                                    @include fontsize(24);
+                                }
+
+                                //screen-nolaptop
+                                span {
+                                    @include fontsize(22);
+
+                                    //screen-nolaptop
+                                    @include screen-nolaptop {
+                                        @include fontsize(10);
+                                    }
+
+                                    //screen-nolaptop
+                                }
+                            }
+                        }
+                    }
+
+                    //basic
+                    &.representation {
+                        th {
+                            background-color: #fff9d3;
+                        }
+
+                        td {
+                            @include fontstyle(22, bold, center, #000);
+                            background-color: #fffad4;
+
+                            //screen-nolaptop
+                            @include screen-nolaptop {
+                                @include fontsize(18);
+                            }
+
+                            //screen-nolaptop
+                            span {
+                                @include fontsize(20);
+                                font-weight: bold;
+                            }
+
+                            em {
+                                font-weight: bold;
+                                @include fontsize(42);
+                                color: #e02522;
+
+                                //screen-nolaptop
+                                @include screen-nolaptop {
+                                    @include fontsize(24);
+                                }
+
+                                //screen-nolaptop
+                                span {
+                                    @include fontsize(22);
+
+                                    //screen-nolaptop
+                                    @include screen-nolaptop {
+                                        @include fontsize(14);
+                                    }
+
+                                    //screen-nolaptop
+                                }
+                            }
+                        }
+                    }
+
+                    //representation
+                    &.rental {
+                        th {
+                            background-color: #ffee80;
+                            @include fontstyle(19, 700, center, #df2522);
+                        }
+
+                        td {
+                            @include fontstyle(22, 700, center, #000);
+                            background-color: #ffee80;
+
+                            //screen-nolaptop
+                            @include screen-nolaptop {
+                                @include fontsize(18);
+                            }
+
+                            //screen-nolaptop
+                            strong {
+                                @include fontstyle(28, 700, center, #df2522);
+
+                                //screen-nolaptop
+                                @include screen-nolaptop {
+                                    //991px以下
+                                    @include fontsize(14);
+                                }
+                            }
+
+                            em {
+                                @include fontstyle(42, bold, center, #e02522);
+
+                                //screen-nolaptop
+                                @include screen-nolaptop {
+                                    @include fontsize(24);
+                                }
+
+                                //screen-nolaptop
+                                span {
+                                    @include fontsize(22);
+
+                                    //screen-nolaptop
+                                    @include screen-nolaptop {
+                                        @include fontsize(10);
+                                    }
+
+                                    //screen-nolaptop
+                                }
+                            }
+
+                            span {
+                                @include fontsize(27);
+                                font-weight: bold;
+
+                                //screen-nolaptop
+                                @include screen-nolaptop {
+                                    @include fontsize(14);
+                                }
+
+                                //screen-nolaptop
+                            }
+                        }
+                    }
+
+                    //rental
+                    &.total {
+                        th {
+                            @include fontstyle(22, bold, center, #e02522);
+                            background-color: #ffef80;
+
+                            //screen-nolaptop
+                            @include screen-nolaptop {
+                                @include fontsize(16);
+                            }
+
+                            //screen-nolaptop
+                        }
+
+                        td {
+                            padding-right: 0;
+                            padding-left: 0;
+                            background-color: #ffef80;
+                            @include fontstyle(14, bold, center, #e02522);
+
+                            //screen-nolaptop
+                            @include screen-nolaptop {
+                                @include fontsize(10);
+                            }
+
+                            //screen-nolaptop
+                            em {
+                                @include fontsize(42);
+                                font-weight: bold;
+
+                                //screen-nolaptop
+                                @include screen-nolaptop {
+                                    @include fontsize(24);
+                                }
+
+                                //screen-nolaptop
+                            }
+
+                            span {
+                                font-weight: bold;
+                                @include fontsize(22);
+                            }
+                        }
+                    }
+
+                    //total
+                    &.insurance,
+                    &.stamp,
+                    &.tax,
+                    &.commission {
+                        th {
+                            line-height: 1.5;
+                        }
+
+                        td {
+                            @include fontstyle(20, bold, center, #000);
+                            padding: 15px 0 15px 0;
+
+                            //screen-nolaptop
+                            @include screen-nolaptop {
+                                @include fontsize(14);
+                            }
+
+                            //screen-nolaptop
+                            span {
+                                @include fontsize(30);
+                            }
+
+                            a {
+                                text-decoration: underline;
+
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                    //insurance/stamp/tax
+                }
+
+                //table
+            }
+
+            .wrap {
+                display: none;
+
+                //screen-notablet
+                @include screen-notablet {
+                    //767px以下
+                    display: block;
+                    padding: 5px 2%;
+
+                    .uniform {
+                        &__img {
+                            margin-bottom: 15px;
+
+                            &:first-of-type {
+                                margin-bottom: 5px;
+
+                                img {
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            &:last-of-type {
+                                margin-bottom: 10px;
+                            }
+
+                            img {
+                                margin-bottom: 8px;
+                            }
+                        }
+                    }
+
+                    //uniform
+                }
+
+                //wrap
+            }
+        }
+
+        .quick {
+            border-color: #1e61ad;
+
+            &__btn {
+                @include wrapauto(460px);
+                margin-bottom: 30px;
+
+                @include screen-notablet {
+                    //767px以下
+                    width: 78.8571429%;
+                    margin-bottom: 30px;
+                }
+
+                a {
+                    span {
+                        @include fontsize(25);
+
+                        @include screen-nolaptop {
+                            //991px以下
+                            @include fontsize(20);
+                        }
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(15);
+                        }
+                    }
+                }
+            }
+
+            &__ttl {
+                background-color: #1D61AD;
+                @include fontstyle(32, bold, center, #fff);
+                line-height: 1;
+                padding: 15px 0;
+
+                @include screen-nolaptop {
+                    //991px以下
+                    @include fontsize(28);
+                }
+
+                @include screen-notablet {
+                    //767px以下
+                    @include fontsize(24);
+                    padding: 10px 0;
+                }
+            }
+
+            table {
+                border-top: 1px solid #1D61AD;
+                border-left: 1px solid #1D61AD;
+
+                tr {
+
+                    td,
+                    th {
+                        border-right: 1px solid #1D61AD;
+                        border-bottom: 1px solid #1D61AD;
+                    }
+
+                    th {
+                        background-color: #e8eff7;
+                        width: 140px;
+                    }
+
+                    &.thumb {
+                        th {
+                            div {
+                                &:last-of-type {
+                                    em {
+                                        color: #1d61ac;
+
+                                        span {
+                                            color: #1d61ac;
+                                        }
+                                    }
+
+                                    strong {
+                                        color: #1d61ac;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //table
+            .wrap {
+
+                //screen-notablet
+                @include screen-notablet {
+
+                    //767px以下
+                    .box {
+                        &__tit {
+                            background-color: #1d61ad;
+                        }
+                    }
+                }
+
+                //wrap
+            }
+
+            &__box {
+                &__item01 {}
+
+                &__item02 {
+                    border-width: 10px;
+                    border-style: solid;
+                    border-color: #1D61AD;
+                    border-right: 0;
+                    border-left: 0;
+                    background-color: #e2f0ff;
+                    padding: 15px 0;
+
+                    @include screen-nolaptop {
+                        //991px以下
+                        border-width: 5px;
+                    }
+
+                    &__img {
+                        @include wrapauto(580px);
+
+                        @include screen-notablet {
+                            //767px以下
+                            width: 82.0588235%;
+                        }
+                    }
+
+                    &__txt {
+                        margin-top: 5px;
+                        @include fontstyle(14, 400, center, #000);
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(10);
+                        }
+                    }
+                }
+
+                &__item03 {
+                    background-color: #e2f0ff;
+                    border: 5px solid #fff;
+                    padding: 0 0 15px;
+
+                    &__ttl {
+                        line-height: 1;
+                        padding: 15px 0;
+                        background-color: #1e61ad;
+                        @include fontstyle(32, 700, center, #fff);
+
+                        @include screen-nolaptop {
+                            //991px以下
+                            @include fontsize(28);
+                        }
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(24);
+                            padding: 10px 0;
+                        }
+                    }
+
+                    &__img {
+                        @include wrapauto(580px);
+                        margin-top: 15px;
+
+                        @include screen-notablet {
+                            //767px以下
+                            width: 90%;
+                        }
+                    }
+
+                    &__txt {
+                        @include fontstyle(18, 700, center, #000);
+                        margin-top: 10px;
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(14);
+                        }
+                    }
+
+                    &__flow {
+                        @include wrapauto(845px);
+                        margin-top: 15px;
+
+                        @include screen-nolaptop {
+                            //991px以下
+                            width: 93%;
+                        }
+                    }
+
+                    &__att {
+                        @include fontstyle(14, 400, center, #000);
+                        margin-top: 15px;
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(10);
+                        }
+                    }
+                }
+            }
+        }
+
+        .premium {
+            margin-top: 45px;
+            border-color: #f17725;
+
+            &__btn {
+                @include wrapauto(460px);
+                margin-top: 45px;
+
+                @include screen-notablet {
+                    //767px以下
+                    width: 78.8571429%;
+                    margin-top: 20px;
+                }
+
+                a {
+                    span {
+                        @include fontsize(26);
+
+                        @include screen-nolaptop {
+                            //991px以下
+                            @include fontsize(20);
+                        }
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(15);
+                        }
+                    }
+                }
+            }
+
+            &__ttl {
+                background-color: #f17725;
+                @include fontstyle(32, bold, center, #fff);
+                line-height: 1;
+                padding: 15px 0;
+
+                @include screen-nolaptop {
+                    //991px以下
+                    @include fontsize(28);
+                }
+
+                @include screen-notablet {
+                    //767px以下
+                    @include fontsize(24);
+                    padding: 10px 0;
+                }
+            }
+
+            &__att {
+                @include fontstyle(14, 400, left, #000);
+                line-height: 1.5;
+                margin-top: 10px;
+
+                @include screen-notablet {
+                    //767px以下
+                    @include fontsize(10);
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                }
+            }
+
+            table {
+                border-top: 1px solid #f17725;
+                border-left: 1px solid #f17725;
+
+                tr {
+
+                    td,
+                    th {
+                        vertical-align: middle;
+                        border-right: 1px solid #f17725;
+                        border-bottom: 1px solid #f17725;
+                    }
+
+                    th {
+                        background-color: #ffe7c8;
+                        width: 140px;
+                    }
+
+                    &.thumb {
+                        th {
+                            div {
+                                &:last-of-type {
+                                    em {
+                                        color: #f17725;
+
+                                        span {
+                                            color: #f17725;
+                                        }
+                                    }
+
+                                    strong {
+                                        color: #f17725;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //table
+            .wrap {
+
+                //screen-notablet
+                @include screen-notablet {
+
+                    //767px以下
+                    .box {
+                        &__tit {
+                            background-color: #f17725;
+                        }
+                    }
+                }
+
+                //wrap
+            }
+
+            &__box {
+                &__item01 {}
+
+                &__item02 {
+                    border-width: 10px;
+                    border-style: solid;
+                    border-color: #f17725;
+                    border-right: 0;
+                    border-left: 0;
+                    background-color: #ffe7c8;
+                    padding: 15px 0;
+
+                    @include screen-nolaptop {
+                        //991px以下
+                        border-width: 5px;
+                    }
+
+                    &__img {
+                        @include wrapauto(580px);
+
+                        @include screen-notablet {
+                            //767px以下
+                            width: 82.0588235%;
+                        }
+                    }
+
+                    &__txt {
+                        margin-top: 5px;
+                        @include fontstyle(14, 400, center, #000);
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(10);
+                        }
+                    }
+                }
+
+                &__item03 {
+                    background-color: #ffe7c8;
+                    border: 5px solid #fff;
+                    padding: 0 0 15px;
+
+                    &__ttl {
+                        line-height: 1;
+                        padding: 15px 0;
+                        background-color: #f17725;
+                        @include fontstyle(32, 700, center, #fff);
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(24);
+                            padding: 10px 0;
+                        }
+                    }
+
+                    &__img {
+                        @include wrapauto(580px);
+                        margin-top: 15px;
+
+                        @include screen-notablet {
+                            //767px以下
+                            width: 90%;
+                        }
+                    }
+
+                    &__txt {
+                        @include fontstyle(18, 700, center, #000);
+                        margin-top: 10px;
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(14);
+                        }
+                    }
+
+                    &__flow {
+                        @include wrapauto(845px);
+                        margin-top: 15px;
+
+                        @include screen-nolaptop {
+                            //991px以下
+                            width: 93%;
+                        }
+                    }
+
+                    &__att {
+                        @include fontstyle(14, 400, center, #000);
+                        margin-top: 15px;
+
+                        @include screen-notablet {
+                            //767px以下
+                            @include fontsize(10);
+                        }
+                    }
+                }
+
+                &__item04 {
+                    border-top: 10px solid #f17725;
+                    background-color: #fff;
+                    padding: 20px 0;
+
+                    @include screen-nolaptop {
+                        //991px以下
+                        border-top: 5px solid #f17725;
+                    }
+
+                    @include screen-notablet {
+                        //767px以下
+                        padding: 15px 0 10px;
+                    }
+
+                    &__ttl {
+                        @include wrapauto(480px);
+
+                        @include screen-notablet {
+                            //767px以下
+                            width: 94.1176471%;
+                        }
+                    }
+
+                    .prezent {
+                        @include wrapauto(845px);
+                        margin-top: 15px;
+                        display: flex;
+                        @include justify-content(space-between);
+                        @include flex-wrap(wrap);
+
+                        @include screen-nolaptop {
+                            //991px以下
+                            width: 94.1176471%;
+                        }
+
+                        &__item {
+                            border: 4px solid #f17725;
+                            border-radius: 8px;
+                            background-color: #fff;
+                            text-align: center;
+                            // width: calc(100% / 2 - 14px);
+                            padding: 0 2% 15px;
+
+                            @include screen-nolaptop {
+                                //991px以下
+                                width: 100%;
+                            }
+
+                            &:last-of-type {
+                                @include screen-nolaptop {
+                                    //991px以下
+                                    margin-top: 30px;
+                                }
+
+                                @include screen-notablet {
+                                    //767px以下
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+
+                        &__ttl {
+                            @include wrapauto(310px);
+
+                            @include screen-notablet {
+                                //767px以下
+                                width: 72.5%;
+                            }
+                        }
+
+                        &__img {
+                            margin-top: 15px;
+
+                            @include screen-notablet {
+                                //767px以下
+                                margin-top: 5px;
+                            }
+
+                            img {
+                                height: 55px;
+
+                                @include screen-notablet {
+                                    //767px以下
+                                    height: 82px;
+                                }
+                            }
+                        }
+
+                        &__txt {
+                            @include fontstyle(18, 700, center, #000);
+                            margin-top: 15px;
+                            line-height: 1.2;
+
+                            @include screen-notablet {
+                                //767px以下
+                                @include fontsize(14);
+                            }
+                        }
+
+                        &__att {
+                            margin-top: 10px;
+
+                            &__item {
+                                @include indent(1);
+                                @include fontstyle(14, 400, left, #000);
+                                line-height: 1.5;
+
+                                @include screen-nolaptop {
+                                    //991px以下
+                                    // text-align: center;
+                                }
+
+                                @include screen-notablet {
+                                    //767px以下
+                                    @include fontsize(10);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

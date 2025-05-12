@@ -1,0 +1,110 @@
+// main: ./style.scss;
+@import "_flex";
+@import "_mixin"; // @include fontstyle(22,normal,center,#808080);
+// @include wrapauto(960px);
+
+.contact {
+  main {
+    .sec01 {
+      margin-bottom: 40px;
+      //screen-nodesktop
+      @include screen-nodesktop {
+        width: 94%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      //screen-nodesktop
+
+      .read {
+        @include fontstyle(18,bold,center,#555555);
+        //screen-nolaptop
+        @include screen-nolaptop {
+          @include fontsize(14);
+        }
+        //screen-nolaptop
+      }
+      //read
+
+
+
+      table {
+        margin-top: 20px;
+        border-top: 1px solid #4d4d4d;
+        border-left: 1px solid #4d4d4d;
+        width: 100%;
+        //screen-tablet
+        @include screen-tablet {}
+        //screen-tablet
+        tr {
+          td,
+          th {
+            vertical-align: top;
+            border-right: 1px solid #4d4d4d;
+            border-bottom: 1px solid #4d4d4d;
+            padding: 20px;
+            line-height: 1.3;
+            @include fontstyle(16,bold,left,#555555);
+            //screen-notablet
+            @include screen-notablet {
+              padding: 15px;
+              @include fontsize(14);
+            }
+            //screen-notablet
+          }
+
+          th {
+            width: 25%;
+            background-color: #eeeeee;
+            white-space: nowrap;
+            //screen-notablet
+            @include screen-notablet {
+              display: block;
+              width: 100%;
+            }
+            //screen-notablet
+          }
+
+          td {
+            width: 75%;
+            //screen-notablet
+            @include screen-notablet {
+              display: block;
+              width: 100%;
+            }
+            //screen-notablet
+            h3 {
+              @include fontstyle(16,bold,left,#555555);
+            }
+
+            dl {
+              dt {
+                margin-top: 5px;
+                @include fontstyle(16,bold,left,#555555);
+
+                &::before {
+                  content: "●";
+                }
+
+                a {
+                  @include fontstyle(16,bold,left,#555555);
+                  text-decoration: underline;
+                  &:hover {
+                    text-decoration: none;
+                  }
+                }
+              }
+
+              dd {
+                margin-top: 5px;
+                margin-left: 1em;
+                line-height: 1.5;
+                @include fontstyle(16,bold,left,#555555);
+              }
+            }
+          }
+        }
+        //table
+      }
+    }
+  }
+}

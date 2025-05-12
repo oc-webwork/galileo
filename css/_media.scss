@@ -1,0 +1,42 @@
+// レスポンシブ対応用 メディアクエリ
+// iPad mini：横幅744px、
+// iPad：横幅820px
+// iPad Pro 12.9：横幅1024px
+// iPad Pro 11：横幅834px
+// iPad Air：横幅820px
+//---------- 幅 ----------
+$width-wide: 1000px;
+$width-short: 840px;
+$width-max: 1440px;
+$height-pc: 12.1rem;
+$height-tb: 7rem;
+$height-sp: 7rem;
+$width-m: 2rem; // スマホ左右マージン
+
+$breakpoints: ('s': '375px',
+    'tb': '743px',
+    'm': $width-wide+80px,
+    'l': $width-max) !default;
+
+@mixin media ($breakpoint: tb) {
+    @media only screen and (min-width: #{ map-get( $breakpoints, $breakpoint ) }) {
+        @content;
+    }
+}
+
+// コンパイル後のメディアクエリの記載順が前後しないよう、事前に記載しておく
+@include media(s) {
+    /* small-size */
+}
+
+@include media(tb) {
+    /* tablet-size */
+}
+
+@include media(m) {
+    /* middle-size */
+}
+
+@include media(l) {
+    /* large-size */
+}

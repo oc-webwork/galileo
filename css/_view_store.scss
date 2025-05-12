@@ -1,0 +1,163 @@
+// main: ./style.scss;
+@import "_flex";
+@import "_mixin"; // @include fontstyle(22,normal,center,#808080);
+// @include wrapauto(960px);
+.store {
+    main {
+        background-color: #fcf1f4;
+        .sec01 {
+            padding-bottom: 30px;
+            //screen-nodesktop
+            @include screen-nodesktop {
+                width: 94%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .read {
+                @include fontstyle(24, 700, center, #000);
+                margin-bottom: 40px;
+                @include screen-nolaptop {
+                    @include fontsize(16);
+                    margin-bottom: 20px;
+                }
+            }
+            //read
+            .shop {
+                background-color: #fff;
+                margin-bottom: 30px;
+                padding: 20px 20px 30px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+                &__tit {
+                    @include fontstyle(30, 700, left, #07458d);
+                    line-height: 1;
+                    @include screen-nolaptop {
+                        //991px以下
+                        @include fontsize(27);
+                    }
+                    //screen-notablet
+                    @include screen-notablet {
+                        //767px以下
+                        @include fontsize(24);
+                    }
+                }
+                &__box {
+                    display: flex;
+                    @include justify-content(space-between);
+                    margin-top: 15px;
+                    @include screen-notablet {
+                        //767px以下
+                        @include flex-wrap(wrap);
+                        @include flex-flow(wrap-reverse);
+                    }
+                }
+                &__table {
+                    width: 630px;
+                    @include screen-nolaptop {
+                        //991px以下
+                        width: 67.7419355%;
+                    }
+                    @include screen-notablet {
+                        //767px以下
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+                    table {
+                        table-layout: fixed;
+                        border-collapse: collapse;
+                        width: 100%;
+                        border-bottom: 1px solid #878787;
+                        tr {
+                            border-top: 1px solid #878787;
+                            th {
+                                width: 90px;
+                                background-color: #fff9d3;
+                                padding: 10px 0;
+                                @include fontstyle(14, 700, center, #000);
+                                @include screen-notablet {
+                                    //767px以下
+                                    display: block;
+                                    width: 100%;
+                                    border-bottom: 1px solid #878787;
+                                }
+                            }
+                            td {
+                                width: auto;
+                                @include fontstyle(15, 700, left, #000);
+                                padding-left: 10px;
+                                @include screen-notablet {
+                                    //767px以下
+                                    display: block;
+                                    width: 100%;
+                                    padding: 10px 3%;
+                                }
+                                a {
+                                    font-weight: 700;
+                                }
+                            }
+                            &:nth-of-type(2),
+                            &:nth-of-type(3),
+                            &:nth-of-type(4),
+                            &:nth-of-type(5) {
+                                td {
+                                    @include screen-notablet {
+                                        //767px以下
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &__thumb {
+                    width: 270px;
+                    @include screen-nolaptop {
+                        //991px以下
+                        width: 27.2452069%;
+                    }
+                    @include screen-notablet {
+                        //767px以下
+                        width: 100%;
+                    }
+                }
+                &__att {
+                    @include fontstyle(12, 400, left, #df2522);
+                    margin-top: 10px;
+                }
+                .map {
+                    margin-top: 15px;
+                }
+                &__btn {
+                    @include wrapauto(360px);
+                    margin-top: 20px;
+                    @include screen-notablet {
+                        //767px以下
+                        width: 85.7142857%;
+                    }
+                    a {
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        span {
+                            @include fontstyle(20, 700, center, #fff);
+                            @include screen-notablet {
+                                //767px以下
+                                @include fontsize(16);
+                            }
+                            &::before {
+                                width: 17px;
+                                height: 17px;
+                                margin-top: -3px;
+                            }
+                            &::after {
+                                margin-top: -5px;
+                                font-size: 12px;
+                                right: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

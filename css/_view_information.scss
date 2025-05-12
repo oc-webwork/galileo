@@ -1,0 +1,111 @@
+// main: ./style.scss;
+@import "_flex";
+@import "_mixin"; // @include fontstyle(22,normal,center,#808080);
+// @include wrapauto(960px);
+
+.information {
+  main {
+    .sec {
+      margin-bottom: 40px;
+      //screen-nodesktop
+      @include screen-nodesktop {
+        width: 94%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      //screen-nodesktop
+      //screen-notablet
+      @include screen-notablet {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      //screen-notablet
+
+
+
+      .read {
+        @include fontstyle(18,bold,center,#555555);
+        margin-top: 20px;
+        //screen-nolaptop
+        @include screen-nolaptop {
+          @include fontsize(10);
+          margin-top: 10px;
+        }
+        //screen-nolaptop
+        //screen-laptop
+        @include screen-laptop {
+          @include fontsize(14);
+        }
+        //screen-laptop
+      }
+      //read
+      .list {
+        margin-top: 30px;
+        @include flexbox();
+        @include flex-wrap(wrap);
+
+        @include justify-content(space-between);
+        //screen-notablet
+        @include screen-notablet {
+          @include flex-wrap(wrap);
+          @include flex-direction(column);
+        }
+        //screen-notablet
+        &::after{
+          content:"";
+          display: block;
+          width:30%;
+        }
+        &__item {
+          width: calc(100% / 3 - 30px);
+          margin-top: 30px;
+          height: 200px;
+          background-color: #eeeeee;
+          text-align: center;
+
+          //screen-laptop
+          @include screen-laptop {
+            margin-top: 20px;
+            height: 160px;
+            width: calc(100% / 3 - 20px);
+          }
+          //screen-laptop
+
+          //screen-mobile
+          @include screen-mobile {
+            margin-top: 20px;
+            width: 100%;
+          }
+          //screen-mobile
+
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin-top: 0;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            //screen-mobile
+            @include screen-mobile {
+              margin-top: 20px;
+              width: 100%;
+            }
+            //screen-mobile
+          }
+
+
+
+          a{
+            img{
+              height: 100%;
+            }
+          }
+        }
+        //__tit
+      }
+      //list
+    }
+  }
+}
