@@ -1,0 +1,123 @@
+@use "global"as *;
+
+// display
+.u-sp {
+  display: block;
+
+  @include media(tb) {
+    display: none;
+  }
+}
+
+.u-sp-inline {
+  display: inline-block;
+
+  @include media(tb) {
+    display: none;
+  }
+}
+
+.u-pc {
+  display: none;
+
+  @include media(tb) {
+    display: block;
+  }
+}
+
+.u-pc-inline {
+  display: none;
+
+  @include media(tb) {
+    display: inline-block;
+  }
+}
+
+.u-hidden {
+  display: none;
+}
+
+// color
+.u-white {
+  color: #fff;
+}
+
+.u-black {
+  color: $color_font;
+}
+
+.u-brown {
+  color: $color_dark-brown;
+}
+
+.u-orange {
+  color: $color_light-orange;
+}
+
+.u-dark-orange {
+  color: $color_dark-orange;
+}
+
+// text-align
+.u-tac {
+  text-align: center;
+}
+
+.u-tar {
+  text-align: right !important;
+}
+
+// background
+.u-bg-light-gray {
+  background: $color_light-gray;
+}
+
+.u-bg-orange-gray {
+  background: $color_orange-gray;
+}
+
+.u-bg-ligh-brown {
+  background: $color_light-brown;
+}
+
+.u-bg-white {
+  background: #fff;
+}
+
+// border
+.u-bd-beige {
+  border: 1px solid $color_beige;
+}
+
+// marker
+.u-orange-marker {
+  text-decoration: underline !important;
+  color: $color_dark-orange;
+  @include hover;
+}
+
+.u-em-orange-marker {
+  font-weight: bold;
+  color: $color_dark-orange;
+}
+
+.u-em-orange-marker {
+  color: $color_light-brown;
+  text-decoration: underline;
+  text-decoration-thickness: 6px; //マーカーの太さ
+  text-decoration-color: #fbeb64; //マーカーの色
+  text-underline-offset: -4px; //マーカーの位置
+  text-decoration-skip-ink: none; //線がテキストと重なっても途切れさせない
+}
+
+
+// font-weight {
+.u-bold {
+  font-weight: bold;
+}
+
+// text-link
+.u-black-link {
+  color: $color_font;
+  @include hover;
+}

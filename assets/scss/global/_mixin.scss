@@ -1,0 +1,138 @@
+@use "vars"as *;
+@use "media"as *;
+@use "sass:math";
+
+// @include transition;
+@mixin transition {
+  transition: opacity linear .3s;
+}
+
+// @include hover;
+@mixin hover {
+  transition: opacity linear .3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// @include fontAwesome;
+// Font Awesome 6 Free（Solid、Regular）
+// Font Awesome 6 Brands（ブランドロゴアイコン）
+@mixin fontAwesome__sol {
+  font-family: "Font Awesome 6 Free";
+  display: inline-block;
+  font-weight: 900;
+}
+
+@mixin fontAwesome__reg {
+  font-family: "Font Awesome 6 Free";
+  display: inline-block;
+  font-weight: 400;
+}
+
+@mixin fontAwesome__bra {
+  font-family: "Font Awesome 6 Brands";
+  display: inline-block;
+  font-weight: 400;
+}
+
+//font-weight: 100 - 900
+@mixin noto-sans-jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+//font-weight: 200 - 700
+@mixin oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+// text-aligh
+// @include justify();
+@mixin justify() {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  word-break: break-all;
+}
+
+// フォントサイズ
+// @include fontsize(10, 16);
+@mixin fontsize($size-s: 10, $size-m: 16) {
+  font-size: math.div($size-s, 10) * 1rem;
+
+  @include media(tb) {
+    font-size: math.div($size-m, 10) * 1rem;
+  }
+}
+
+// absolute一括指定
+// @include absolute(0,0,0,0);
+// @include absolute($top:0, $bottom:0);
+@mixin absolute($top:null, $right:null, $bottom:null, $left:null) {
+  position: absolute;
+
+  @if $top !=null {
+    top: $top;
+  }
+
+  @if $right !=null {
+    right: $right;
+  }
+
+  @if $bottom !=null {
+    bottom: $bottom;
+  }
+
+  @if $left !=null {
+    left: $left;
+  }
+}
+
+// 親要素に対して中央寄せ
+// x：横方向中央寄せ,y：縦方向中央寄せ,xy：縦横方向中央寄せ
+// @include center(x);
+@mixin center($direction) {
+  position: absolute;
+
+  @if $direction==xy {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @else if $direction==x {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @else if $direction==y {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+// @include clearfix;
+@mixin clearfix {
+
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+// その他
+@mixin replace($original, $replacement) {
+
+  // @include replace($, $) {}
+  @at-root {
+    #{selector-replace(&, $original, $replacement)} {
+      @content;
+    }
+  }
+}

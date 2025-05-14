@@ -15,6 +15,7 @@
     }
 }
 
+// 不使用
 @mixin wrap($margin, $width) {
     margin: $margin;
     width: $width;
@@ -49,6 +50,7 @@
     font-size: ($size/10)+rem;
 }
 
+// 不使用
 @mixin placeholderColor($color) {
     &:placeholder-shown {
         color: $color;
@@ -78,6 +80,7 @@
     margin-left: ($kye)+em;
 }
 
+// 不使用
 @media only screen and (max-width: 768px) {
     @mixin fontstyle($size, $weight, $align, $color) {
         font-size: ($size/2)+px;

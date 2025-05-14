@@ -1,0 +1,75 @@
+@use "global"as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family:
+    "Noto Sans JP",
+    "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro",
+    "游ゴシック",
+    "Yu Gothic",
+    YuGothic,
+    Osaka,
+    "ＭＳ Ｐゴシック",
+    "MS PGothic",
+    "メイリオ",
+    Meiryo,
+    sans-serif;
+  color: $color_font;
+  font-weight: 500;
+  line-height: 1.85;
+  @include fontsize(14, 16);
+
+  @include media(tb) {
+    line-height: 2;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+p,
+ul li,
+ol li {
+  @include justify();
+}
+
+picture,
+img {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+main {
+  margin-top: 7rem;
+  overflow: hidden;
+
+  @include media(header) {
+    margin-top: 11.9rem;
+  }
+}

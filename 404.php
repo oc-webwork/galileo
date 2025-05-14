@@ -1,21 +1,12 @@
-<?php get_header(); ?>
+<?php
+get_header();
+remove_filter('the_content', 'wpautop');
+?>
 
+<div class="l-base p-404">
 
-    <section class="sec inner-n">
+  <p class="u-tac">お探しのページが見つかりませんでした。<br>申し訳ございませんが、<a href="<?php echo home_url('/'); ?>" class="u-orange">こちらのリンク</a>からトップページにお戻りください。</p>
 
-      <div class="box">
-        <div class="box__txt">
-          <p>お探しのページは<br>見つかりませんでした</p>
-          <p>このページは一時的にアクセスができない状況にあるか、<br>URLが変更・削除された可能性がございます。</p>
-        </div>
-        <div class="box__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/1x/notfound_img01.png" alt="">
-        </div>
-      </div>
+</div>
 
-      <div class="btn--back">
-        <a href="<?php echo home_url('/'); ?>">トップページへ</a>
-      </div>
-    </section>
-    
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

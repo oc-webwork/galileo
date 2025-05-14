@@ -13,15 +13,29 @@ if (!(is_page("about"))) {
 
 ?>
 
-<ul class="conversion">
-	<li><a href="<?php echo home_url('/online/'); ?>">車検Web予約</a></li>
-	<li><a href="<?php echo home_url('/simulator/'); ?>">車検費用<br class="sp">シミュレーター</a></li>
-	<li><a href="<?php echo home_url('/form/'); ?>">お問い合わせ</a></li>
+<ul class="p-conversion">
+	<li><a href="<?php echo home_url('/online'); ?>">
+			<img src="<?php echo do_shortcode('[tpu]'); ?>/assets/images/common/icon-calendar.webp" alt="">
+			車検Web予約</a></li>
+	<li><a href="<?php echo home_url('/simulator'); ?>">
+			<img src="<?php echo do_shortcode('[tpu]'); ?>/assets/images/common/icon-simulator.webp" alt="">
+			車検費用<br class="sp">シミュレーター</a></li>
+	<li><a href="<?php echo home_url('/form'); ?>">
+			<img src="<?php echo do_shortcode('[tpu]'); ?>/assets/images/common/icon-form.webp" alt="">
+			お問い合わせ</a></li>
 </ul>
 </main>
-<footer class="p-footer">
-	<div class="p-footer__wrap">
+<footer class="p-footer__outline">
+
+	<div class="p-footer">
 		<div class="p-footer__inner">
+			<div class="p-footer__logo">
+				<?php if (is_home()) : ?>
+					<img src="<?php echo do_shortcode('[tpu]'); ?>/assets/images/common/logo.webp" alt="<?php bloginfo('name'); ?>">
+				<?php else : ?>
+					<a href="<?php echo home_url('/'); ?>"><img src="<?php echo do_shortcode('[tpu]'); ?>/assets/images/common/logo.webp" alt="<?php bloginfo('name'); ?>"></a>
+				<?php endif; ?>
+			</div>
 			<?php wp_nav_menu(
 				array(
 					'menu'  => 'footer_navigation', //メニュー管理画面で登録したメニュー名
@@ -32,17 +46,14 @@ if (!(is_page("about"))) {
 					'menu_class' => 'p-footer__nav'
 				)
 			); ?>
-
 			<div class="p-footer__banner">
-				<a href="https://shimada-repair.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/2x/footer_banner.jpg" alt="クルマの「キズ・ヘコミ」はWEBで無料カンタンお見積り!シマダ自動車整備"></a>
-				<a href="https://car-suku.com/index.html" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/2x/footer_banner2.jpg" alt="クルマのサブスク カースク"></a>
-				<a href="https://www.ins-saison.co.jp/otona/ldp/transition_agent?cid=VXK906" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/2x/footer_banner3.jpg" alt="おとなの自動車保険"></a>
+				<a href="https://shimada-repair.com/" target="_blank"><img src="<?php echo do_shortcode('[tpu]'); ?>/assets/images/common/banner_img01.webp" alt="クルマの「キズ・ヘコミ」はWEBで無料カンタンお見積り!シマダ自動車整備"></a>
+				<a href="https://car-suku.com/index.html" target="_blank"><img src="<?php echo do_shortcode('[tpu]'); ?>/assets/images/common/banner_img02.webp" alt="クルマのサブスク カースク"></a>
+				<a href="https://www.ins-saison.co.jp/otona/ldp/transition_agent?cid=VXK906" target="_blank"><img src="<?php echo do_shortcode('[tpu]'); ?>/assets/images/common/banner_img03.webp" alt="おとなの自動車保険"></a>
 			</div>
-
 		</div>
 	</div>
-	<div class="logo"><a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/1x/logo.png" alt="デジタル車検 ガリレオ"></a></div>
-	<small class="copy">COPYRIGHT(C) HONDA NET NARA ALL RIGHTS RESERVED</small>
+	<small class="p-footer__copy">© 2025 HONDA NET KINKI</small>
 </footer>
 </body>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
@@ -164,14 +175,6 @@ if (is_page(array(121, 130, 133))) : ?>
 	<?php endif; ?>
 <?php endif; ?>
 
-<!--
-<script>
-//問い合わせ完了画面へリダイレクト
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-    location = 'https://galileo-syaken.com/formthank/';
-}, false );
-</script>
--->
 
 <?php wp_footer(); ?>
 
