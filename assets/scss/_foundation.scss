@@ -69,7 +69,7 @@ main {
   margin-top: 7rem;
   overflow: hidden;
 
-  @include media(header) {
+  @include media(pc) {
     margin-top: 11.9rem;
   }
 }

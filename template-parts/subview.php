@@ -6,31 +6,46 @@ $page = get_post(get_the_ID());
 $slug = $page->post_name;
 
 if (is_post_type_archive("column") || is_singular("column")) {
-  $ttl = 'コラム';
-  $img_url .= 'column/column-topview.webp';
+  // $ttl = 'コラム';
+  // $img_url .= 'column/column-topview.webp';
 } else if (is_archive() || is_single()) {
-  $ttl = 'お知らせ';
-  $img_url .= 'news/news-topview.webp';
-} elseif (is_page("privacy")) {
-  $ttl = 'プライバシーポリシー';
-  $img_url .= 'privacy/policy-topview.webp';
-} elseif (is_page("sitepolicy")) {
-  $ttl = 'サイトポリシー';
-  $img_url .= 'privacy/policy-topview.webp';
-} elseif (is_page("cookiepolicy")) {
-  $ttl = 'クッキー（Cookie）ポリシー';
-  $img_url .= 'privacy/policy-topview.webp';
-} elseif (is_page("sitemap")) {
-  $ttl = 'サイトマップ';
-  $img_url .= 'sitemap/sitemap-topview.webp';
+  // $ttl = 'お知らせ';
+  // $img_url .= 'news/news-topview.webp';
+} elseif (is_page("reason")) {
+  $ttl = 'ガリレオ車検が選ばれる6つの理由';
+} elseif (is_page("about")) {
+  $ttl = '会社案内';
+} elseif (is_page("flow")) {
+  $ttl = '車検の流れ';
+} elseif (is_page("form")) {
+  $ttl = 'お問い合わせ';
+} elseif (is_page("mail-setup")) {
+  $ttl = '自動返信メールが届かないお客様へ';
+} elseif (is_page("maintenance")) {
+  $ttl = 'おすすめ整備メニュー';
+} elseif (is_page("online-kashihara")) {
+  $ttl = 'ガリレオ車検　橿原店';
+} elseif (is_page("online-nara")) {
+  $ttl = 'オンライン予約 奈良店';
+} elseif (is_page("online-tsusima")) {
+  $ttl = 'ガリレオ車検　津島本店';
+} elseif (is_page("online")) {
+  $ttl = 'オンライン予約';
+} elseif (is_page("price")) {
+  $ttl = '料金案内';
+} elseif (is_page("reason")) {
+  $ttl = '選ばれる理由';
+} elseif (is_page("simulator")) {
+  $ttl = '車検費用シミュレーター';
+} elseif (is_page("store")) {
+  $ttl = '店舗情報';
+} elseif (is_page("terms")) {
+  $ttl = '利用規約';
 }
 ?>
 
-<div class="l-base p-sv">
-  <?php if (!is_single()): ?>
-    <h1 class="p-sv__ttl "><?php echo $ttl; ?></h1>
-  <?php else: ?>
-    <h2 class="p-sv__ttl "><?php echo $ttl; ?></h2>
-  <?php endif; ?>
-  <img src="<?php echo $img_url; ?>" alt="<?php the_title(); ?>" class="p-sv__img -<?php echo $slug; ?>">
-</div>
+<section class="p-sv__outline">
+  <div class="p-sv">
+    <h1><?php echo $ttl; ?></h1>
+  </div>
+</section>
