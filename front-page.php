@@ -137,7 +137,7 @@
 </div>
 <!-- maintenance -->
 
-<div class="p-campaign__outline">
+<div class="p-campaign__outline" id="p-campaign">
   <h2 class="top-ttl01">
     <div class="top-ttl01__inner">
       <div>
