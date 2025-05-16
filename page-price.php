@@ -227,99 +227,107 @@ get_header();
 					<h3 class="p-course__subttl -economy">エコノミー車検の料金表<span>（税込）</span></h3>
 					<table>
 						<tbody>
-							<tr class="p-pricemenu__thumb">
+							<tr class="p-pricemenu__table__head -economy">
 								<th rowspan="2">車種</th>
 								<th>
 									<div>軽自動車</div>
-									<div>　</div>
-									<div><em><span class="font-oswld">37,290</span>円</em><strong>(税込)〜</strong></div>
 								</th>
 								<th>
 									<div>小型乗用車</div>
-									<div>（車両重量1,000kg以下）</div>
-									<div><em><span class="font-oswld">47,200</span>円</em><strong>(税込)〜</strong></div>
+									<span>（車両重量1,000kg以下）</span>
 								</th>
 								<th>
 									<div>中型乗用車</div>
-									<div>（車両重量1,001〜1,500kg）</div>
-									<div><em><span class="font-oswld">55,400</span>円</em><strong>(税込)〜</strong></div>
+									<span>（車両重量1,001〜1,500kg）</span>
 								</th>
 								<th>
 									<div>大型乗用車</div>
-									<div>（車両重量1,501〜2,000kg以下）</div>
-									<div><em><span class="font-oswld">63,600</span>円</em><strong>(税込)〜</strong></div>
+									<span>（車両重量1,501〜2,000kg以下）</span>
 								</th>
 							</tr>
-							<tr class="p-pricemenu__thumb">
+							<tr class="p-pricemenu__table__head">
 								<td>
 									<img src="https://galileo-syaken.com/wp/wp-content/themes/galileo_ver1.2504/images/1x/top_sec03_img01.png" alt="軽自動車">
-									<p class="thumb__txt">ハスラー・N-BOX・<br>ワゴンR・タント etc.</p>
+									<p>ハスラー・N-BOX・<br>ワゴンR・タント etc.</p>
 								</td>
 								<td>
 									<img src="https://galileo-syaken.com/wp/wp-content/themes/galileo_ver1.2504/images/1x/top_sec03_img02.png" alt="小型車（1.0tまで）">
-									<p class="thumb__txt">パッソ・アクア・<br>ヴィッツ・マーチ etc.</p>
+									<p>パッソ・アクア・<br>ヴィッツ・マーチ etc.</p>
 								</td>
 								<td>
 									<img src="https://galileo-syaken.com/wp/wp-content/themes/galileo_ver1.2504/images/1x/top_sec03_img03.png" alt="中型車（1.5tまで）">
-									<p class="thumb__txt">ノート・ウィッシュ・<br>ラクティス・レガシィ etc.</p>
+									<p>ノート・ウィッシュ・<br>ラクティス・レガシィ etc.</p>
 								</td>
 								<td>
 									<img src="https://galileo-syaken.com/wp/wp-content/themes/galileo_ver1.2504/images/1x/top_sec03_img04.png" alt="大型車（2.0tまで）">
-									<p class="thumb__txt">ノア・クラウン・オデッセイ・<br>エスティマ etc.</p>
+									<p>ノア・クラウン・オデッセイ・<br>エスティマ etc.</p>
 								</td>
 							</tr>
 							<tr class="basic">
-								<th>車検基本費用</th>
+								<th class="bg-pickup -economy">車検基本費用</th>
 								<td colspan="4">
-									全車種一律 <em class="font-oswld">15,900<span>円</span></em>
+									<span class="fs-22">全車種一律 <em class="font-oswld fs-36">18,900</em> 円</span>
 								</td>
 							</tr>
+							<tr class="basic">
+								<th class="bg-pickup -economy">保安確認検査料</th>
+								<td colspan="4">
+									<span class="fs-22">別途</span>
+								</td>
+							</tr>
+
 							<tr class="representation">
-								<th>代行手数料</th>
+								<th class="bg-pickup -economy">代行手数料</th>
 								<td colspan="4">
-									全車種一律 <em class="font-oswld">0<span>円</span></em>
+									<span class="fs-22">全車種一律 <em class="font-oswld fs-36">0</em>円</span>
 								</td>
 							</tr>
-							<tr class="representation">
-								<th>保安確認検査料</th>
+							<tr class="bg-pickup -economy">
+								<th class="fs-19">車検費用合計</th>
 								<td colspan="4">
-									全車種一律 <em class="font-oswld">2,200<span>円</span></em>
-								</td>
-							</tr>
-							<tr class="rental">
-								<th>最大割引</th>
-								<td colspan="4">
-									全車種一律 <strong>最大</strong><em class="font-oswld">4,550<span>円引</span></em>
+									<span class="fs-22">全車種一律 <em class="font-oswld fs-36">18,900</em>円</span>
 								</td>
 							</tr>
 							<tr class="insurance">
 								<th>自賠責保険</th>
-								<td><span class="font-oswld">17,540</span>円</td>
-								<td colspan="3"><span class="font-oswld">17,650</span>円</td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">17,540</em>円</span></td>
+								<td colspan="3"><span class="fs-20"><em class="font-oswld fs-30">17,650</em>円</span></td>
 							</tr>
 							<tr class="tax">
-								<th>重量税（基本）</th>
-								<td><span class="font-oswld">6,600</span>円</td>
-								<td><span class="font-oswld">16,400</span>円</td>
-								<td><span class="font-oswld">24,600</span>円</td>
-								<td><span class="font-oswld">32,800</span>円</td>
-							</tr>
-							<tr class="commission">
-								<th>技術情報管理<br>手数料</th>
-								<td colspan="4"><span class="font-oswld">400</span>円
-									<p class="p-pricemenu__box__item02__txt">※技術情報管理手数料に関しては<a href="https://wwwtb.mlit.go.jp/kinki/content/000234495.pdf" target="_blank">コチラ</a> <i class="far fa-window-restore"></i></p>
-								</td>
+								<th>重量税</th>
+								<td><span class="fs-20"><em class="font-oswld fs-30">6,600</em>円</span></td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">16,400</em>円</span></td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">24,600</em>円</span></td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">32,800</em>円</span></td>
 							</tr>
 							<tr class="stamp">
 								<th>印紙代</th>
-								<td colspan="4"><span class="font-oswld">1,400</span>円</td>
+								<td colspan="4"><span class="fs-20"><em class="font-oswld fs-30">1,800</em>円</span></td>
 							</tr>
-							<tr class="total">
-								<th>割引後価格</th>
-								<td><em class="font-oswld">37,290</em><span>円</span>(税込)〜</td>
-								<td><em class="font-oswld">47,200</em><span>円</span>(税込)〜</td>
-								<td><em class="font-oswld">55,400</em><span>円</span>(税込)〜</td>
-								<td><em class="font-oswld">63,600</em><span>円</span>(税込)〜</td>
+							<tr class="bg-pickup -economy">
+								<th class="fs-19">車検総額</th>
+								<td><span class="fs-20"><em class="font-oswld fs-30">44,840</em>円</span></td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">54,750</em>円</span></td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">62,950</em>円</span></td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">71,150</em>円</span></td>
+							</tr>
+							<tr class="rental">
+								<th class="fs-22 cl-red">最大割引</th>
+								<td colspan="4">
+									<span class="cl-red">
+										<span class="fs-22">全車種一律</span>
+										<span class="fs-28">最大</span>
+										<em class="font-oswld fs-36">6,000</em>
+										<span class="fs-27">円引</span>
+									</span>
+								</td>
+							</tr>
+							<tr class="bg-pickup -economy cl-red">
+								<th class="fs-22">割引後価格</th>
+								<td><span class="fs-22"><em class="font-oswld fs-36">38,840</em>円</span></td>
+								<td><span class="fs-22"><em class="font-oswld fs-36">46,750</em>円</span></td>
+								<td><span class="fs-22"><em class="font-oswld fs-36">54,950</em>円</span></td>
+								<td><span class="fs-22"><em class="font-oswld fs-36">63,150</em>円</span></td>
 							</tr>
 						</tbody>
 					</table>

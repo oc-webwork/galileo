@@ -1566,11 +1566,124 @@ main {
   display: none;
   transition: all 0.3s linear;
 }
+.price .p-course .p-pricemenu__table__head th {
+  width: 20%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.price .p-course .p-pricemenu__table__head th:nth-of-type(1) {
+  width: auto;
+  font-size: 1.6rem;
+}
+
+.price .p-course .p-pricemenu__table__head th div {
+  font-size: 2.3rem;
+  line-height: 1;
+}
+
+.price .p-course .p-pricemenu__table__head th span {
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.price .p-course .p-pricemenu__table__head td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.price .p-course .p-pricemenu__table__head td img {
+  height: 5.3rem;
+  width: auto;
+  display: inline-block;
+}
+
+.price .p-course .p-pricemenu__table__head td p {
+  line-height: 1.2;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.price .p-course .p-pricemenu__table__head.-economy th {
+  background-color: #e7eef5;
+}
+
+.price .p-course .p-pricemenu__table__head.-standard th {
+  background-color: #fdefea;
+}
+
 .price .p-course .p-pricemenu__table table {
   border-top: 1px solid #555555;
   border-left: 1px solid #555555;
   text-align: center;
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.price .p-course .p-pricemenu__table table th,
+.price .p-course .p-pricemenu__table table td {
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #555555;
+  border-right: 1px solid #555555;
+  line-height: 1;
+  padding-top: 1.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.price .p-course .p-pricemenu__table table .fs-19 {
+  font-size: 1.9rem;
+}
+
+.price .p-course .p-pricemenu__table table .fs-20 {
+  font-size: 2rem;
+}
+
+.price .p-course .p-pricemenu__table table .fs-22 {
+  font-size: 2.2rem;
+}
+
+.price .p-course .p-pricemenu__table table .fs-27 {
+  font-size: 2.7rem;
+}
+
+.price .p-course .p-pricemenu__table table .fs-28 {
+  font-size: 2.8rem;
+}
+
+.price .p-course .p-pricemenu__table table .fs-30 {
+  font-size: 3rem;
+}
+
+.price .p-course .p-pricemenu__table table .fs-36 {
+  font-size: 3.6rem;
+}
+
+.price .p-course .p-pricemenu__table table .cl-red {
+  color: #df2522;
+}
+
+.price .p-course .p-pricemenu__table table .bg-pickup {
+  background-color: #e7eef5;
+}
+
+.price .p-course .p-pricemenu__table table .bg-pickup.-economy {
+  background-color: #e7eef5;
+}
+
+.price .p-course .p-pricemenu__table table .bg-pickup.-standard {
+  background-color: #fdefea;
+}
+
+.price .p-course .p-pricemenu__table table .bg-pickup.-plusone {
+  background-color: #fbe9e9;
 }
 
 .price .p-course .p-message {
@@ -1612,7 +1725,6 @@ main {
 .price .p-course .p-discount__img01 {
   width: 100%;
 }
-
 .price .p-course .p-discount__img02 {
   width: 100%;
 }
@@ -1622,6 +1734,7 @@ main {
   text-align: center;
 }
 .price .p-course .font-oswld {
+  line-height: 1;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -2802,6 +2915,9 @@ main {
     font-size: 1.4rem;
     margin-top: 2rem;
   }
+  .price .p-course__inner{
+    width: min(100%, 94rem);
+  }
   .price .p-course .p-pricemenu{
     margin-top: 2.5rem;
   }
@@ -2811,14 +2927,27 @@ main {
   .price .p-course .p-pricemenu__table{
     display: block;
   }
+  .price .p-course .p-message{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
   .price .p-course .p-message__txt{
     font-size: 4rem;
   }
   .price .p-course .p-message__att{
     font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+  .price .p-course .p-discount > div{
+    padding: 3rem 4rem 3rem;
   }
   .price .p-course .p-discount__txt{
     font-size: 1.8rem;
+  }
+  .price .p-course .p-discount__img01{
+    width: 73.4rem;
+    margin-right: auto;
+    margin-left: auto;
   }
   .price .p-course .p-discount__att{
     font-size: 1.4rem;

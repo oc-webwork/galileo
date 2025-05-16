@@ -2857,6 +2857,10 @@
 			@include media(tb) {
 				width: 80%;
 			}
+
+			@include media(pc) {
+				width: min(calc(100%), 94rem);
+			}
 		}
 
 		&__box {
@@ -2911,12 +2915,135 @@
 					display: block;
 				}
 
-				table {
 
+
+				&__head {
+					th {
+						width: 20%;
+						padding-top: 1rem;
+						padding-bottom: 1rem;
+						line-height: 1;
+						padding-top: 1.2rem;
+						padding-bottom: 1.2rem;
+
+						&:nth-of-type(1) {
+							width: auto;
+							font-size: 1.6rem;
+						}
+
+						div {
+							font-size: 2.3rem;
+							line-height: 1;
+						}
+
+						span {
+							font-size: 1.2rem;
+							line-height: 1;
+							margin-top: 0.5rem;
+							display: block;
+						}
+
+					}
+
+					td {
+						padding-top: 1rem;
+						padding-bottom: 1rem;
+
+						img {
+							height: 5.3rem;
+							width: auto;
+							display: inline-block;
+						}
+
+						p {
+							line-height: 1.2;
+							text-align: center;
+							font-size: 1.2rem;
+							margin-top: 0.5rem;
+						}
+					}
+
+					&.-economy {
+						th {
+							background-color: #e7eef5;
+						}
+					}
+
+					&.-standard {
+						th {
+							background-color: #fdefea;
+						}
+					}
+
+					&.-plusone {}
+				}
+
+				table {
 					border-top: 1px solid #555555;
 					border-left: 1px solid #555555;
 					text-align: center;
 					width: 100%;
+					border-collapse: collapse;
+					border-spacing: 0;
+
+					th,
+					td {
+						text-align: center;
+						vertical-align: middle;
+						border-bottom: 1px solid #555555;
+						border-right: 1px solid #555555;
+						line-height: 1;
+						padding-top: 1.2rem;
+						padding-bottom: 1.5rem;
+					}
+
+					.fs-19 {
+						font-size: 1.9rem;
+					}
+
+					.fs-20 {
+						font-size: 2rem;
+					}
+
+					.fs-22 {
+						font-size: 2.2rem;
+					}
+
+					.fs-27 {
+						font-size: 2.7rem;
+					}
+
+					.fs-28 {
+						font-size: 2.8rem;
+					}
+
+					.fs-30 {
+						font-size: 3rem;
+					}
+
+					.fs-36 {
+						font-size: 3.6rem;
+					}
+
+					.cl-red {
+						color: #df2522;
+					}
+
+					.bg-pickup {
+						background-color: #e7eef5;
+
+						&.-economy {
+							background-color: #e7eef5;
+						}
+
+						&.-standard {
+							background-color: #fdefea;
+						}
+
+						&.-plusone {
+							background-color: #fbe9e9;
+						}
+					}
 				}
 
 
@@ -2936,6 +3063,11 @@
 			@include media(tb) {
 				padding-top: 2.5rem;
 				padding-bottom: 2rem;
+			}
+
+			@include media(pc) {
+				padding-top: 2rem;
+				padding-bottom: 1.5rem;
 			}
 
 			&__txt {
@@ -2977,6 +3109,7 @@
 
 				@include media(pc) {
 					font-size: 1.4rem;
+					margin-top: 1.5rem;
 				}
 			}
 		}
@@ -2987,6 +3120,10 @@
 
 				@include media(tb) {
 					padding: 2.5rem 4rem 2.5rem;
+				}
+
+				@include media(pc) {
+					padding: 3rem 4rem 3rem;
 				}
 			}
 
@@ -3006,6 +3143,12 @@
 
 			&__img01 {
 				width: 100%;
+
+				@include media(pc) {
+					width: 73.4rem;
+					margin-right: auto;
+					margin-left: auto;
+				}
 			}
 
 			&__img02 {
@@ -3027,6 +3170,7 @@
 		}
 
 		.font-oswld {
+			line-height: 1;
 			@include oswald;
 		}
 	}
