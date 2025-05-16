@@ -3275,6 +3275,11 @@
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
+
+		@include media(pc) {
+			width: 96rem;
+		}
+
 	}
 
 	.ttl {
@@ -3606,10 +3611,17 @@
 		background-color: #CCE4FF;
 	}
 
-	input:checked+.course__item--ex {
+	input:checked+.course__item--standard {
 		color: #F17725;
 		background-color: #FFF9CC;
 	}
+
+	input:checked+.course__item--plusone {
+		color: #df2522;
+		background-color: #fae9e9;
+	}
+
+
 
 	.discount {
 		@extend %radius;
@@ -4353,6 +4365,8 @@
 
 			@include media(tb) {
 				padding: 2rem 2.5rem 1.5rem;
+				overflow: inherit;
+
 
 			}
 		}
@@ -4458,6 +4472,7 @@
 			padding-left: 0.6rem;
 			text-align: left;
 			line-height: 1.4;
+			// width: 100%;
 
 			@include media(tb) {
 				font-size: 1.2rem;
@@ -4465,7 +4480,6 @@
 				padding-top: 0.5rem;
 				padding-bottom: 0.9rem;
 				line-height: 1;
-				width: 100%;
 			}
 		}
 
@@ -4474,13 +4488,11 @@
 			color: #DF2522;
 			font-weight: bold;
 			text-align: right;
-			background-color: #FFF9D3;
+			// background-color: #FFF9D3;
 			padding-right: 0.6rem;
 
 			@include media(tb) {
 				padding-right: 2rem;
-
-
 
 				& span {
 					@include oswald;
@@ -4516,19 +4528,21 @@
 			}
 		}
 
-		// Vue.js設定
-		.fade-enter-active,
-		.fade-leave-active {
-			transition: opacity 0.3s;
-		}
-
-		// Vue.js設定
-		.fade-enter,
-		.fade-leave-to {
-			opacity: 0;
+		&__total {
+			color: #DF2522;
+			background-color: #FCF1F4;
 		}
 	}
 
+	// Vue.js設定
+	.fade-enter-active,
+	.fade-leave-active {
+		transition: opacity 0.3s;
+	}
 
-
+	// Vue.js設定
+	.fade-enter,
+	.fade-leave-to {
+		opacity: 0;
+	}
 }

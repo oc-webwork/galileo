@@ -1787,7 +1787,6 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-
 .p-simulator .ttl {
   margin: 0 auto 2rem;
   width: 100%;
@@ -1958,9 +1957,14 @@ main {
   background-color: #CCE4FF;
 }
 
-.p-simulator input:checked + .course__item--ex {
+.p-simulator input:checked + .course__item--standard {
   color: #F17725;
   background-color: #FFF9CC;
+}
+
+.p-simulator input:checked + .course__item--plusone {
+  color: #df2522;
+  background-color: #fae9e9;
 }
 
 .p-simulator .discount {
@@ -2527,7 +2531,6 @@ main {
   color: #DF2522;
   font-weight: bold;
   text-align: right;
-  background-color: #FFF9D3;
   padding-right: 0.6rem;
 }
 .p-simulator .table__num__total {
@@ -2535,13 +2538,18 @@ main {
   background-color: #FCF1F4;
 }
 
-.p-simulator .table .fade-enter-active,
-.p-simulator .table .fade-leave-active {
+.p-simulator .table__total {
+  color: #DF2522;
+  background-color: #FCF1F4;
+}
+
+.p-simulator .fade-enter-active,
+.p-simulator .fade-leave-active {
   transition: opacity 0.3s;
 }
 
-.p-simulator .table .fade-enter,
-.p-simulator .table .fade-leave-to {
+.p-simulator .fade-enter,
+.p-simulator .fade-leave-to {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
@@ -3408,6 +3416,7 @@ main {
   }
   .p-simulator .modal__box{
     padding: 2rem 2.5rem 1.5rem;
+    overflow: inherit;
   }
   .p-simulator .modal__h1{
     margin-bottom: 1.5rem;
@@ -3433,7 +3442,6 @@ main {
     padding-top: 0.5rem;
     padding-bottom: 0.9rem;
     line-height: 1;
-    width: 100%;
   }
   .p-simulator .table__num{
     padding-right: 2rem;
@@ -4058,6 +4066,9 @@ main {
   }
   .price .p-course .p-discount__box ul li{
     font-size: 1.4rem;
+  }
+  .p-simulator .inner-m{
+    width: 96rem;
   }
   .p-simulator .model__item{
     width: 23.5%;
