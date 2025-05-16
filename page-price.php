@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: ガリレオ車検が選ばれる6つの理由
+Template Name: 料金案内
 */
 get_header();
 ?>
