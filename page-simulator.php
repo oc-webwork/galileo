@@ -7,7 +7,7 @@ get_header();
 <!-- MVを表示 -->
 <?php get_template_part('template-parts/subview'); ?>
 
-<section class="p-simulator__outline">
+<section class="p-simulator__outline" style="display: none;">
 	<div class="p-simulator ">
 
 		<div class="inner-m">
