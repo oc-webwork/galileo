@@ -4551,6 +4551,10 @@
 	padding-top: 2rem;
 	background-color: #fff9d3;
 
+	@include media(pc) {
+		padding-top: 4rem;
+	}
+
 	.sec01 {
 		width: 94%;
 		margin-right: auto;
@@ -4558,13 +4562,13 @@
 
 
 		.tit {
-			margin-right: auto;
-			margin-left: auto;
 
 			width: 100%;
 
-			@include media(tb) {
+			@include media(pc) {
 				width: 88rem;
+				margin-right: auto;
+				margin-left: auto;
 			}
 		}
 
@@ -4575,7 +4579,7 @@
 			margin-top: 10px;
 			line-height: 1.5;
 
-			@include media(tb) {
+			@include media(pc) {
 				margin-top: 20px;
 				font-size: 2.4rem;
 			}
@@ -4604,6 +4608,10 @@
 
 			}
 
+			@include media(pc) {
+				width: 96rem;
+			}
+
 		}
 
 		&__tit {
@@ -4630,7 +4638,7 @@
 			margin-right: auto;
 			margin-left: auto;
 
-			@include media(tb) {
+			@include media(pc) {
 				width: 86rem;
 			}
 
@@ -4719,14 +4727,14 @@
 				left: -10px;
 
 				@include media(tb) {
-					width: 100px;
-
+					width: 80px;
+					top: -20px;
+					left: -20px;
 				}
 
 				@include media(pc) {
-					top: -20px;
-					left: -20px;
-					width: 80px;
+
+					width: 100px;
 				}
 
 
@@ -4738,10 +4746,24 @@
 				justify-content: space-between;
 				flex-wrap: wrap;
 
+				@include media(tb) {
+					flex-wrap: nowrap;
+				}
+
 			}
 
 			&__txtbox {
 				width: 460px;
+
+				@include media(tb) {
+					width: calc(100% - 11rem);
+					padding-right: 1rem;
+				}
+
+				@include media(pc) {
+					width: calc(100% - 23rem);
+					padding-right: 2rem;
+				}
 			}
 
 			&__ttl {
@@ -4749,6 +4771,7 @@
 				font-weight: 700;
 				text-align: left;
 				color: #07458d;
+				line-height: 1.5;
 
 				@include media(tb) {
 					font-size: 3rem;
@@ -4795,17 +4818,19 @@
 
 				@include media(tb) {
 					width: 230px;
+					margin-top: 0;
+
 				}
 			}
 
 			&__upper {
-
-				width: 93%;
-				margin-left: 7%;
+				width: 90%;
+				margin-left: 10%;
 
 				@include media(tb) {
-					width: 90%;
-					margin-left: 10%;
+
+					width: 93%;
+					margin-left: 7%;
 				}
 
 				@include media(pc) {
@@ -4824,8 +4849,12 @@
 					width: 100%;
 
 					@include media(tb) {
-						width: 62rem;
+						width: 52rem;
 
+					}
+
+					@include media(pc) {
+						width: 62rem;
 					}
 				}
 			}
@@ -4840,6 +4869,9 @@
 			margin-right: auto;
 			margin-left: auto;
 
+			@include media(pc) {
+				width: 96rem;
+			}
 		}
 
 		&__box {
@@ -4880,13 +4912,14 @@
 
 			@include media(tb) {
 				margin-top: 15px;
+				height: 180px;
 				margin-right: auto;
-				height: 100px;
 				margin-left: auto;
+
 			}
 
 			@include media(pc) {
-				width: 90%;
+				width: 100%;
 				height: 140px;
 			}
 
@@ -4896,6 +4929,7 @@
 				margin-bottom: 5px;
 				font-weight: 500;
 				font-size: 1.2rem;
+				line-height: 1.5;
 
 				@include media(tb) {
 					font-size: 1.8rem;
@@ -4909,19 +4943,17 @@
 				&:nth-child(2) {
 					width: 50%;
 
-					@include media(tb) {
-						width: 340px;
+					@include media(pc) {
+						width: 38%;
 					}
-
-					//screen-nolaptop
 				}
 
 				&:nth-child(3),
 				&:nth-child(4) {
 					width: 50%;
 
-					@include media(tb) {
-						// width: 290px;
+					@include media(pc) {
+						width: 30%;
 					}
 
 				}
@@ -4931,8 +4963,8 @@
 				&:nth-child(7) {
 					width: 50%;
 
-					@include media(tb) {
-						width: 180px;
+					@include media(pc) {
+						width: auto;
 					}
 				}
 
@@ -4962,6 +4994,10 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 			flex-direction: column;
+
+			@include media(pc) {
+				flex-direction: row;
+			}
 		}
 
 		&__btn {
@@ -4977,7 +5013,11 @@
 
 				@include media(tb) {
 					margin-left: 0;
+				}
+
+				@include media(pc) {
 					margin-bottom: 40px;
+					margin-left: 250px;
 				}
 			}
 		}

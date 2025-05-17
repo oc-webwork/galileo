@@ -19,7 +19,7 @@ get_header();
 				</picture>
 			</h2>
 			<p class="read">
-				コンシェルジュがお車の状態を<br class="sp" />分かりやすく丁寧にご説明！
+				コンシェルジュがお車の状態を<br class="u-sp">分かりやすく丁寧にご説明！
 			</p>
 		</div>
 	</section>

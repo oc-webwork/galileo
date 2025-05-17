@@ -103,6 +103,10 @@
         top: 50%;
         right: 0;
         margin-top: -3px;
+
+        @include media(pc) {
+          margin-top: -7px;
+        }
       }
     }
 
@@ -142,8 +146,8 @@
       @include media(tb) {
 
         border-radius: 10px;
-        padding-top: 35px;
-        padding-bottom: 35px;
+        padding-top: 25px;
+        padding-bottom: 25px;
 
       }
 
@@ -262,8 +266,13 @@
         line-height: 1.3;
         font-size: 1.8rem;
 
+        @include media(tb) {
+          font-size: 2rem;
+        }
+
         @include media(pc) {
           font-size: 3rem;
+
         }
 
 
@@ -368,6 +377,10 @@
 
         @include media(tb) {
           font-size: 2rem;
+        }
+
+        @include media(pc) {
+          font-size: 3rem;
         }
 
         &::before {
@@ -626,13 +639,14 @@
       span {
         &::after {
           content: "▶";
-          right: 22px;
+          right: 13px;
 
           @include media(tb) {
             /* tablet-size */
             right: 21px;
 
           }
+
         }
       }
     }

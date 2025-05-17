@@ -210,7 +210,6 @@ main {
   right: 0;
   margin-top: -3px;
 }
-
 .btn a:hover {
   opacity: 0.7;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
@@ -544,7 +543,7 @@ main {
 
 .btn--r a span:after {
   content: "▶";
-  right: 22px;
+  right: 13px;
 }
 .btn--b a span:after {
   content: "▼";
@@ -3037,7 +3036,6 @@ main {
   padding-top: 2rem;
   background-color: #fff9d3;
 }
-
 .p-flow .sec01 {
   width: 94%;
   margin-right: auto;
@@ -3045,8 +3043,6 @@ main {
 }
 
 .p-flow .sec01 .tit {
-  margin-right: auto;
-  margin-left: auto;
   width: 100%;
 }
 .p-flow .sec01 .read {
@@ -3135,16 +3131,15 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .p-flow .step .list__txtbox {
   width: 460px;
 }
-
 .p-flow .step .list__ttl {
   font-size: 2rem;
   font-weight: 700;
   text-align: left;
   color: #07458d;
+  line-height: 1.5;
 }
 .p-flow .step .list__ttl span {
   font-weight: 700;
@@ -3163,8 +3158,8 @@ main {
   margin-top: 10px;
 }
 .p-flow .step .list__upper {
-  width: 93%;
-  margin-left: 7%;
+  width: 90%;
+  margin-left: 10%;
 }
 .p-flow .step .list__lower {
   margin-top: 20px;
@@ -3185,7 +3180,6 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
-
 .p-flow .belongings__box {
   background-color: #fff;
   border-radius: 10px;
@@ -3222,6 +3216,7 @@ main {
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 1.2rem;
+  line-height: 1.5;
 }
 .p-flow .belongings .list__item:nth-child(1), .p-flow .belongings .list__item:nth-child(2) {
   width: 50%;
@@ -3229,7 +3224,6 @@ main {
 .p-flow .belongings .list__item:nth-child(3), .p-flow .belongings .list__item:nth-child(4) {
   width: 50%;
 }
-
 .p-flow .belongings .list__item:nth-child(5), .p-flow .belongings .list__item:nth-child(6), .p-flow .belongings .list__item:nth-child(7) {
   width: 50%;
 }
@@ -3256,7 +3250,6 @@ main {
   -ms-flex-direction: column;
       flex-direction: column;
 }
-
 .p-flow .interest__btn {
   width: 100%;
   margin-bottom: 20px;
@@ -3395,8 +3388,8 @@ main {
   }
   .btn--yellow2 a{
     border-radius: 10px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .btn--yellow2 a span{
     font-size: 2.4rem;
@@ -3414,6 +3407,9 @@ main {
     border-radius: 10px;
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+  .btn--red2 a span{
+    font-size: 2rem;
   }
   .btn--red2 a span:before{
     width: 29px;
@@ -4255,13 +4251,6 @@ main {
   .p-simulator .table__num--ex span{
     font-size: 2.4rem;
   }
-  .p-flow .sec01 .tit{
-    width: 88rem;
-  }
-  .p-flow .sec01 .read{
-    margin-top: 20px;
-    font-size: 2.4rem;
-  }
   .p-flow .step{
     margin-top: 20px;
   }
@@ -4271,9 +4260,6 @@ main {
   .p-flow .step__tit{
     margin-bottom: 35px;
     font-size: 3.4rem;
-  }
-  .p-flow .step .list{
-    width: 86rem;
   }
   .p-flow .step .list__item{
     padding: 25px 20px;
@@ -4297,7 +4283,17 @@ main {
     right: 14px;
   }
   .p-flow .step .list__icon{
-    width: 100px;
+    width: 80px;
+    top: -20px;
+    left: -20px;
+  }
+  .p-flow .step .list__box{
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .p-flow .step .list__txtbox{
+    width: calc(100% - 11rem);
+    padding-right: 1rem;
   }
   .p-flow .step .list__ttl{
     font-size: 3rem;
@@ -4310,13 +4306,14 @@ main {
   }
   .p-flow .step .list__img{
     width: 230px;
+    margin-top: 0;
   }
   .p-flow .step .list__upper{
-    width: 90%;
-    margin-left: 10%;
+    width: 93%;
+    margin-left: 7%;
   }
   .p-flow .step .list__lower__img{
-    width: 62rem;
+    width: 52rem;
   }
   .p-flow .belongings__ttl{
     padding: 15px 0;
@@ -4324,25 +4321,18 @@ main {
   }
   .p-flow .belongings .list{
     margin-top: 15px;
+    height: 180px;
     margin-right: auto;
-    height: 100px;
     margin-left: auto;
   }
   .p-flow .belongings .list__item{
     font-size: 1.8rem;
-  }
-  .p-flow .belongings .list__item:nth-child(1), .p-flow .belongings .list__item:nth-child(2){
-    width: 340px;
-  }
-  .p-flow .belongings .list__item:nth-child(5), .p-flow .belongings .list__item:nth-child(6), .p-flow .belongings .list__item:nth-child(7){
-    width: 180px;
   }
   .p-flow .interest{
     padding: 50px 0;
   }
   .p-flow .interest__btn:first-of-type{
     margin-left: 0;
-    margin-bottom: 40px;
   }
   .u-sp{
     display: none;
@@ -4374,10 +4364,16 @@ main {
   .c-btn a i{
     font-size: 2.4rem;
   }
+  .btn a span:after{
+    margin-top: -7px;
+  }
   .btn--yellow2 a span{
     font-size: 3rem;
   }
   .btn--red2 a span{
+    font-size: 3rem;
+  }
+  .btn--blue2 a span{
     font-size: 3rem;
   }
   .btn--green a span{
@@ -4988,13 +4984,33 @@ main {
   .p-simulator .option__item--none{
     height: auto;
   }
+  .p-flow{
+    padding-top: 4rem;
+  }
+  .p-flow .sec01 .tit{
+    width: 88rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .p-flow .sec01 .read{
+    margin-top: 20px;
+    font-size: 2.4rem;
+  }
+  .p-flow .step .inner-m{
+    width: 96rem;
+  }
   .p-flow .step__tit{
     font-size: 4.2rem;
   }
+  .p-flow .step .list{
+    width: 86rem;
+  }
   .p-flow .step .list__icon{
-    top: -20px;
-    left: -20px;
-    width: 80px;
+    width: 100px;
+  }
+  .p-flow .step .list__txtbox{
+    width: calc(100% - 23rem);
+    padding-right: 2rem;
   }
   .p-flow .step .list__ttl{
     font-size: 4rem;
@@ -5009,18 +5025,41 @@ main {
     width: 730px;
     margin-left: auto;
   }
+  .p-flow .step .list__lower__img{
+    width: 62rem;
+  }
+  .p-flow .belongings .inner-m{
+    width: 96rem;
+  }
   .p-flow .belongings__ttl{
     font-size: 3.4rem;
   }
   .p-flow .belongings .list{
-    width: 90%;
+    width: 100%;
     height: 140px;
   }
   .p-flow .belongings .list__item{
     font-size: 2.4rem;
   }
+  .p-flow .belongings .list__item:nth-child(1), .p-flow .belongings .list__item:nth-child(2){
+    width: 38%;
+  }
+  .p-flow .belongings .list__item:nth-child(3), .p-flow .belongings .list__item:nth-child(4){
+    width: 30%;
+  }
+  .p-flow .belongings .list__item:nth-child(5), .p-flow .belongings .list__item:nth-child(6), .p-flow .belongings .list__item:nth-child(7){
+    width: auto;
+  }
+  .p-flow .interest__box{
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
   .p-flow .interest__btn{
     width: 460px;
+  }
+  .p-flow .interest__btn:first-of-type{
+    margin-bottom: 40px;
+    margin-left: 250px;
   }
 }
 
