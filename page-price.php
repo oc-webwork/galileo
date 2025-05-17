@@ -302,6 +302,13 @@ get_header();
 								<th>印紙代</th>
 								<td colspan="4"><span class="fs-20"><em class="font-oswld fs-30">1,800</em>円</span></td>
 							</tr>
+							<tr>
+								<th>諸費用合計</th>
+								<td><span class="fs-20"><em class="font-oswld fs-30">25,940</em>円</span></td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">35,850</em>円</span></td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">44,050</em>円</span></td>
+								<td><span class="fs-20"><em class="font-oswld fs-30">52,250</em>円</span></td>
+							</tr>
 							<tr class="bg-pickup -economy">
 								<th class="fs-19">車検総額</th>
 								<td><span class="fs-20"><em class="font-oswld fs-30">44,840</em>円</span></td>
@@ -321,7 +328,7 @@ get_header();
 								</td>
 							</tr>
 							<tr class="bg-pickup -economy cl-red">
-								<th class="fs-22">割引後価格</th>
+								<th class="fs-22">適用後価格</th>
 								<td><span class="fs-22"><em class="font-oswld fs-36">38,840</em>円</span></td>
 								<td><span class="fs-22"><em class="font-oswld fs-36">46,750</em>円</span></td>
 								<td><span class="fs-22"><em class="font-oswld fs-36">54,950</em>円</span></td>
@@ -526,7 +533,7 @@ get_header();
 								</td>
 							</tr>
 							<tr class="bg-pickup -standard cl-red">
-								<th class="fs-22">割引後価格</th>
+								<th class="fs-22">適用後価格</th>
 								<td><span class="fs-22"><em class="font-oswld fs-36">48,840</em>円</span></td>
 								<td><span class="fs-22"><em class="font-oswld fs-36">58,750</em>円</span></td>
 								<td><span class="fs-22"><em class="font-oswld fs-36">66,950</em>円</span></td>
@@ -566,7 +573,7 @@ get_header();
 							<img src="<?php echo do_shortcode('[tpu]'); ?>/assets/images/price/price_standard_img08.webp" alt="">
 						</picture>
 						<ul>
-							<li>※プラスワン車検コースをご利用いただいた方限定</li>
+							<li>※スタンダード車検コースをご利用いただいた方限定</li>
 							<li>※エンジンオイル交換より6ヶ月または走行距離5,000kmでの交換となり、エンジンオイル半額交換チケットでのご利用となります。</li>
 							<li>※ディーゼル車は半額。</li>
 						</ul>
@@ -740,7 +747,7 @@ get_header();
 								</td>
 							</tr>
 							<tr class="bg-pickup -plusone cl-red">
-								<th class="fs-22">割引後価格</th>
+								<th class="fs-22">適用後価格</th>
 								<td><span class="fs-22"><em class="font-oswld fs-36">52,440</em>円</span></td>
 								<td><span class="fs-22"><em class="font-oswld fs-36">62,350</em>円</span></td>
 								<td><span class="fs-22"><em class="font-oswld fs-36">70,550</em>円</span></td>
