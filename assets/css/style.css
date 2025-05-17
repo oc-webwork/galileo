@@ -186,7 +186,6 @@ main {
   padding-right: 22px;
   display: inline-block;
   width: 100%;
-  line-height: 1;
 }
 
 .btn a span:before {
@@ -241,6 +240,7 @@ main {
   font-weight: 700;
   text-align: center;
   font-size: 2rem;
+  line-height: 1.3;
   color: #000;
 }
 .btn--yellow2 a span:before {
