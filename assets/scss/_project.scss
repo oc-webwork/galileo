@@ -4987,6 +4987,10 @@
 			width: 74%;
 			margin-right: auto;
 			margin-left: auto;
+
+			@include media(pc) {
+				width: 93rem;
+			}
 		}
 
 		&__box {

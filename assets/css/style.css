@@ -3239,7 +3239,6 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
-
 .p-flow .interest__box {
   display: -ms-flexbox;
   display: flex;
@@ -5049,6 +5048,9 @@ main {
   }
   .p-flow .belongings .list__item:nth-child(5), .p-flow .belongings .list__item:nth-child(6), .p-flow .belongings .list__item:nth-child(7){
     width: auto;
+  }
+  .p-flow .interest .inner-m{
+    width: 93rem;
   }
   .p-flow .interest__box{
     -ms-flex-direction: row;
