@@ -24,11 +24,11 @@ if (is_post_type_archive("column") || is_singular("column")) {
 } elseif (is_page("maintenance")) {
   $ttl = 'おすすめ整備メニュー';
 } elseif (is_page("online-kashihara")) {
-  $ttl = 'ガリレオ車検　橿原店';
+  $ttl = 'オンライン予約';
 } elseif (is_page("online-nara")) {
-  $ttl = 'オンライン予約 奈良店';
+  $ttl = 'オンライン予約';
 } elseif (is_page("online-tsusima")) {
-  $ttl = 'ガリレオ車検　津島本店';
+  $ttl = 'オンライン予約';
 } elseif (is_page("online")) {
   $ttl = 'オンライン予約';
 } elseif (is_page("price")) {

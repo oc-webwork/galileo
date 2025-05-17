@@ -7,6 +7,7 @@
   main {
     .sec {
       margin-bottom: 40px;
+
       //screen-nodesktop
       @include screen-nodesktop {
         width: 94%;
@@ -14,105 +15,127 @@
         margin-left: auto;
         margin-bottom: 20px;
       }
+
       //screen-nodesktop
       &last-child {
         margin-bottom: 0;
       }
 
       &__tit {
-        @include fontstyle(22,bold,left,#555);
+        @include fontstyle(22, bold, left, #555);
         line-height: 1;
         padding: 15px 20px;
         border-top: 2px solid #e02522;
         border-bottom: 1px solid #4d4d4d;
+
         //screen-notablet
         @include screen-notablet {
           @include fontsize(18);
           padding: 15px;
         }
+
         //screen-notablet
       }
+
       //__tit
       .box {
         border: 1px solid #4d4d4d;
         margin-top: 20px;
         padding: 40px;
+
         //screen-nolaptop
         @include screen-nolaptop {
           padding: 20px 4%;
         }
+
         //screen-nolaptop
 
 
         .list {
           &__tit {
-            @include fontstyle(18,bold,left,#555);
+            @include fontstyle(18, bold, left, #555);
             margin-top: 40px;
+
             //screen-nolaptop
             @include screen-nolaptop {
               @include fontsize(16);
               margin-top: 20px;
             }
+
             //screen-nolaptop
             &:first-child {
               margin-top: 0;
             }
           }
+
           //__tit
           &__txt {
-            @include fontstyle(16,normal,left,#555);
+            @include fontstyle(16, normal, left, #555);
             margin-top: 5px;
+
             //screen-nolaptop
             @include screen-nolaptop {
               @include fontsize(14);
             }
+
             //screen-nolaptop
           }
+
           //__tit
         }
+
         //list
         .company {
-          @include fontstyle(16,normal,right,#555);
+          @include fontstyle(16, normal, right, #555);
           margin-top: 60px;
+
           //screen-nolaptop
           @include screen-nolaptop {
             @include fontsize(14);
             margin-top: 20px;
 
           }
+
           //screen-nolaptop
         }
       }
+
       //box
       .privacy {
         width: 100%;
         margin-top: 55px;
+
         //screen-laptop
         @include screen-laptop {
           margin-top: 20px;
         }
+
         //screen-laptop
         //screen-mobile
         @include screen-mobile {
           @include wrapauto(80%);
           margin-top: 20px;
         }
+
         //screen-mobile
         a {
           width: 100%;
           display: block;
-          @include fontstyle(18,bold,center,#07458e);
+          @include fontstyle(18, bold, center, #07458e);
           text-decoration: underline;
+
           //screen-nolaptop
           @include screen-nolaptop {
             @include fontsize(14);
           }
+
           //screen-nolaptop
           &:hover {
             text-decoration: none;
           }
         }
       }
+
       //privacy
     }
   }

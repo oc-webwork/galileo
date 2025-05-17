@@ -8,48 +8,58 @@
     .sec {
       margin-top: 120px;
       margin-bottom: 120px;
+
       //screen-nodesktop
       @include screen-nodesktop {
         @include wrapauto(94%);
         margin-top: 60px;
         margin-bottom: 60px;
       }
+
       //screen-nodesktop
       .box {
         @include column_space-between();
+
         //screen-nodesktop
         @include screen-nodesktop {
           position: relative;
         }
+
         //screen-nodesktop
         &__txt {
           width: 60%;
+
           //screen-nodesktop
           @include screen-nodesktop {
             width: 100%;
           }
+
           //screen-nodesktop
           p {
             &:first-child {
-              @include fontstyle(36,bold,left,#000);
+              @include fontstyle(36, bold, left, #000);
               margin-top: 10px;
               line-height: 1.5;
+
               //screen-notablet
               @include screen-notablet {
                 @include fontsize(20);
                 margin-top: 15px;
               }
+
               //screen-notablet
             }
 
             &:last-child {
-              @include fontstyle(18,bold,left,#555);
+              @include fontstyle(18, bold, left, #555);
               line-height: 1.8;
               margin-top: 40px;
+
               //screen-notablet
               @include screen-notablet {
                 @include fontsize(13);
               }
+
               //screen-notablet
             }
           }
@@ -57,6 +67,7 @@
 
         &__img {
           width: 38%;
+
           //screen-notablet
           @include screen-notablet {
             width: 40%;
@@ -64,21 +75,25 @@
             top: 0;
             right: 0;
           }
+
           //screen-notablet
           img {
             width: 100%;
           }
         }
       }
+
       //box
       .btn--back {
         @include wrapauto(370px);
         margin-top: 110px;
+
         //screen-notablet
         @include screen-notablet {
           width: 80%;
           margin-top: 50px;
         }
+
         //screen-notablet
       }
     }

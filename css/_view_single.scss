@@ -7,7 +7,7 @@
   main {
     .sec {
       margin-bottom: 40px;
-      @include fontstyle(16,normal,left,#555);
+      @include fontstyle(16, normal, left, #555);
 
       //screen-nodesktop
       @include screen-nodesktop {
@@ -15,20 +15,23 @@
         margin-right: auto;
         margin-left: auto;
       }
+
       //screen-nodesktop
 
 
       &__tit {
-        @include fontstyle(22,bold,left,#555);
+        @include fontstyle(22, bold, left, #555);
         line-height: 1;
         padding: 15px 20px;
         border-top: 2px solid #e02522;
         border-bottom: 1px solid #4d4d4d;
+
         //screen-notablet
         @include screen-notablet {
           @include fontsize(18);
           padding: 15px;
         }
+
         //screen-notablet
       }
 

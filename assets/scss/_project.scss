@@ -39,7 +39,6 @@
 		@include media(pc) {
 			margin-left: 2rem;
 			margin-right: 1rem;
-
 		}
 	}
 
@@ -59,7 +58,6 @@
 		text-align: center;
 
 		@include media(tb) {
-
 			width: 5rem;
 		}
 
@@ -68,7 +66,6 @@
 		}
 
 		span {
-
 			display: block;
 			width: 2.25rem;
 			height: .2rem;
@@ -80,9 +77,8 @@
 			&+span {
 				margin-top: .5rem;
 
-				@include media(tb) {}
-			}
 
+			}
 		}
 
 		p {
@@ -104,9 +100,7 @@
 					transform: translate3d(0, 7px, 0) rotate(45deg);
 
 					@include media(tb) {
-
 						// transform: translate3d(0, 14px, 0) rotate(45deg);
-
 					}
 				}
 
@@ -117,7 +111,7 @@
 				&:nth-of-type(3) {
 					transform: translate3d(0, -7px, 0) rotate(-45deg);
 
-					@include media(tb) {}
+
 				}
 			}
 
@@ -156,8 +150,6 @@
 					img {
 						width: 1.6rem;
 						height: 2rem;
-
-
 					}
 				}
 			}
@@ -208,11 +200,8 @@
 						width: 14rem;
 					}
 				}
-
 			}
 		}
-
-
 	}
 
 	&__top {
@@ -229,9 +218,7 @@
 		}
 	}
 
-
 	&__btm {
-
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -257,7 +244,6 @@
 		margin-top: 7rem;
 
 		@include media(pc) {
-
 			display: flex;
 			justify-content: center;
 			width: min(calc(100%), 106rem);
@@ -291,7 +277,6 @@
 
 				@include media(pc) {
 					padding: 0.7rem 2rem;
-
 				}
 			}
 
@@ -305,27 +290,20 @@
 				a {
 					background-color: #9e0a15;
 				}
-
 			}
 
 			&.sp {
 				display: block;
 
 				@include media(pc) {
-
 					display: none;
-
 				}
 			}
 		}
 	}
 
-
-
 	.spnav {
-
 		display: none;
-
 		//screen-tablet
 		margin: 5px 0 10px;
 
@@ -339,34 +317,14 @@
 				padding-right: 25px;
 				border-right: 1px solid #555555;
 
-				// //screen-mobile
-				// @include screen-mobile {
-				// 	margin-right: 10px;
-				// 	padding-right: 10px;
-				// 	margin-bottom: 5px;
-				// }
-
-
-				//screen-mobile
 				a {
-					// @include fontstyle(18,
-					// 	bold,
-					// 	left,
-					// 	#555555);
 					display: inline-block;
 					line-height: 20px;
 					position: relative;
 
-					//screen-mobile
-					// @include screen-mobile {
-					// 	font-size: 1.4rem;
-					// }
-
-					//screen-mobile
 					&:hover {
 						text-decoration: none;
 
-						// color: #ff0000;
 						&::after {
 							width: 100%;
 							left: 0;
@@ -395,7 +353,6 @@
 		}
 	}
 }
-
 
 //
 // conversion
@@ -486,7 +443,6 @@
 
 			@include media(tb) {
 				font-size: 1.6rem;
-
 			}
 
 			img {}
@@ -546,7 +502,6 @@
 		}
 	}
 }
-
 
 //
 // footer
@@ -776,7 +731,6 @@
 				}
 			}
 		}
-
 	}
 
 	.-section {
@@ -811,7 +765,6 @@
 			clip-path: polygon(100% 0, 100% 100%, 0 100%);
 		}
 	}
-
 
 	.p-mv {
 		@include media(tb) {
@@ -886,7 +839,6 @@
 	}
 
 	.p-course {
-
 		background-image: url(../images/top/top_course_bg.webp);
 		background-size: cover;
 		background-position: 50% 0;
@@ -894,7 +846,6 @@
 
 		@include media(tb) {
 			background-image: url(../images/top/top_course_bg-pc.webp);
-
 		}
 
 		@include media(pc) {
@@ -932,7 +883,6 @@
 				@include media(pc) {
 					font-size: 3.6rem;
 				}
-
 
 				span {
 					font-size: 4.2rem;
@@ -980,12 +930,10 @@
 
 					@include media(pc) {
 						width: calc(100% / 3 - 1.5rem);
-
 					}
 
 					&:hover {
 						box-shadow: 0 0 0;
-
 					}
 
 					&:nth-of-type(4) {
@@ -1044,8 +992,6 @@
 				width: 38rem;
 			}
 		}
-
-
 	}
 
 	.p-reason {
@@ -1070,14 +1016,13 @@
 			margin-right: auto;
 			margin-left: auto;
 
-			@include media(tb) {}
+
 
 			@include media(pc) {
 				width: 83rem;
 				margin-right: auto;
 				margin-left: auto;
 			}
-
 
 			h3 {
 				font-size: 2.6rem;
@@ -1135,7 +1080,6 @@
 			padding-top: 56.25%;
 			cursor: pointer;
 
-
 			@include media(tb) {
 				margin-top: 3rem;
 				margin-right: 2rem;
@@ -1148,14 +1092,12 @@
 				margin-left: 2.5rem;
 			}
 
-
 			iframe {
 				width: 100%;
 				height: 100%;
 				position: absolute;
 				top: 0px;
 				left: 0px;
-
 			}
 		}
 
@@ -1265,7 +1207,6 @@
 
 					@include media(pc) {
 						width: calc(100% / 3 - 1.5rem);
-
 					}
 
 					p {
@@ -1281,7 +1222,6 @@
 						@include media(pc) {
 							font-size: 2rem;
 						}
-
 					}
 				}
 			}
@@ -1312,13 +1252,11 @@
 			@include media(tb) {
 				margin-top: 2rem;
 				font-size: 2rem;
-
 			}
 
 			@include media(pc) {
 				margin-top: 3rem;
 				font-size: 2.4rem;
-
 			}
 		}
 
@@ -1337,10 +1275,7 @@
 			@include media(pc) {
 				width: 38rem;
 				margin-top: 3.5rem;
-
 			}
-
-
 		}
 	}
 
@@ -1367,7 +1302,6 @@
 			}
 		}
 
-
 		&__inner {
 			@include media(tb) {
 				width: 90%;
@@ -1379,7 +1313,6 @@
 				width: min(calc(100%), 96rem);
 				margin-right: auto;
 				margin-left: auto;
-
 			}
 
 			h3 {
@@ -1479,7 +1412,6 @@
 						font-size: 1.2rem;
 						line-height: 1.8;
 						margin-top: 0rem;
-
 					}
 				}
 			}
@@ -1517,12 +1449,9 @@
 				width: 38rem;
 			}
 		}
-
 	}
 
 	.p-form {
-
-
 		&__outline {
 			background-image: url(../images/top/top_form_bg.webp);
 			background-size: cover;
@@ -1659,10 +1588,8 @@
 				width: 38rem;
 			}
 		}
-
 	}
 }
-
 
 .reason {
 	.p-reason__section {
@@ -1672,7 +1599,6 @@
 		@include media(tb) {
 			margin-right: 4rem;
 			margin-left: 4rem;
-
 		}
 
 		@include media(pc) {
@@ -1680,7 +1606,6 @@
 			margin-right: auto;
 			margin-left: auto;
 		}
-
 	}
 
 	.p-reason__ttl {
@@ -1727,7 +1652,7 @@
 			color: #0b56a2;
 			@include oswald;
 
-			@include media(tb) {}
+
 
 			@include media(pc) {}
 		}
@@ -1746,7 +1671,6 @@
 			background-size: 256rem;
 			height: 25rem;
 		}
-
 	}
 
 	.p-reason01 {
@@ -1796,13 +1720,11 @@
 			@include media(tb) {
 				font-size: 1.2rem;
 				margin-top: 1rem;
-
 			}
 
 			@include media(pc) {
 				font-size: 1.4rem;
 				margin-top: 2rem;
-
 			}
 		}
 
@@ -1851,7 +1773,6 @@
 
 		&__video {
 			margin-top: 1rem;
-
 			position: relative;
 			width: 100%;
 			padding-top: 56.25%;
@@ -1871,14 +1792,12 @@
 				width: 100%;
 			}
 
-
 			iframe {
 				width: 100%;
 				height: 100%;
 				position: absolute;
 				top: 0px;
 				left: 0px;
-
 			}
 		}
 
@@ -1899,7 +1818,6 @@
 	}
 
 	.p-reason03 {
-
 		&__outline {}
 
 		&__img01 {
@@ -1918,9 +1836,6 @@
 				margin-right: auto;
 			}
 		}
-
-
-
 
 		&__list {
 			margin-top: 1rem;
@@ -1991,8 +1906,6 @@
 				margin-top: 4rem;
 				font-size: 2.4rem;
 			}
-
-
 		}
 
 		&__box01 {
@@ -2031,7 +1944,6 @@
 					padding-bottom: 2rem;
 				}
 
-
 				h3 {
 					color: #fff;
 					font-size: 2.2rem;
@@ -2062,8 +1974,6 @@
 							font-size: 2.1rem;
 						}
 					}
-
-
 				}
 
 				p {
@@ -2214,7 +2124,6 @@
 			@include media(pc) {
 				margin-top: 3rem;
 				font-size: 2.4rem;
-
 			}
 
 			span {
@@ -2256,7 +2165,6 @@
 	}
 
 	.p-reason05 {
-
 		&__outline {}
 
 		&__txt01 {
@@ -2273,7 +2181,6 @@
 			@include media(pc) {
 				font-size: 2.4rem;
 				margin-top: 3.5rem;
-
 			}
 		}
 
@@ -2292,9 +2199,7 @@
 				margin-top: 2rem;
 				font-size: 1.4rem;
 			}
-
 		}
-
 	}
 
 	.p-reason06 {
@@ -2321,15 +2226,12 @@
 				margin-top: 4rem;
 				font-size: 2.4rem;
 			}
-
 		}
-
 	}
 }
 
 .price {
 	.p-mnav {
-
 		background-image: url(../images/price/price_mnav_bg.webp);
 		background-size: 128rem;
 		background-position: 50% 0;
@@ -2344,16 +2246,13 @@
 			background-size: 256rem;
 		}
 
-		&__outline {
-
-			@include media(tb) {}
-		}
+		&__outline {}
 
 		&__inner {
 			padding-top: 2rem;
 			padding-bottom: 8.5rem;
 
-			@include media(tb) {}
+
 
 			@include media(pc) {
 				padding-top: 4rem;
@@ -2370,7 +2269,6 @@
 				@include media(pc) {
 					font-size: 3.6rem;
 				}
-
 
 				span {
 					font-size: 4.8rem;
@@ -2405,7 +2303,6 @@
 					margin-right: auto;
 					margin-left: auto;
 					gap: 4rem 2rem;
-
 				}
 
 				li {
@@ -2419,12 +2316,10 @@
 
 					@include media(pc) {
 						width: calc(100% / 3 - 1.5rem);
-
 					}
 
 					&:hover {
 						box-shadow: 0 0 0;
-
 					}
 
 					&:nth-of-type(4) {
@@ -2483,8 +2378,6 @@
 				width: 38rem;
 			}
 		}
-
-
 	}
 
 	.p-simplifiedchart {
@@ -2566,7 +2459,6 @@
 						height: 5rem;
 					}
 				}
-
 			}
 
 			th {
@@ -2627,8 +2519,6 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-
-			@include media(tb) {}
 
 			@include media(pc) {
 				padding-top: 2rem;
@@ -2785,7 +2675,6 @@
 				font-size: 3.2rem;
 				padding-top: 1.2rem;
 				padding-bottom: 1.2rem;
-
 			}
 
 			span {
@@ -2793,7 +2682,6 @@
 
 				@include media(tb) {
 					font-size: 1.6rem;
-
 				}
 
 				@include media(pc) {
@@ -2827,7 +2715,6 @@
 			@include media(pc) {
 				font-size: 2.4rem;
 				margin-top: 3rem;
-
 			}
 		}
 
@@ -2839,13 +2726,11 @@
 			@include media(tb) {
 				font-size: 1.2rem;
 				margin-top: 1.5rem;
-
 			}
 
 			@include media(pc) {
 				font-size: 1.4rem;
 				margin-top: 2rem;
-
 			}
 		}
 
@@ -2870,7 +2755,6 @@
 				margin-top: 1rem;
 			}
 		}
-
 
 		.p-pricemenu {
 			margin-top: 1.5rem;
@@ -2905,7 +2789,6 @@
 			}
 
 			// スマホ版・タブレット版のみ表示 end
-
 			// PC版のみ表示
 			&__table {
 				display: none;
@@ -2914,8 +2797,6 @@
 				@include media(pc) {
 					display: block;
 				}
-
-
 
 				&__head {
 					th {
@@ -2942,7 +2823,6 @@
 							margin-top: 0.5rem;
 							display: block;
 						}
-
 					}
 
 					td {
@@ -3049,15 +2929,9 @@
 						}
 					}
 				}
-
-
-
-
 			}
 
 			// PC版のみ表示 end
-
-
 		}
 
 		.p-message {
@@ -3190,7 +3064,6 @@
 					margin-right: 1.5rem;
 					margin-left: 1.5rem;
 					padding-bottom: 1.5rem;
-
 				}
 
 				ul {
@@ -3214,7 +3087,6 @@
 						}
 					}
 				}
-
 			}
 
 			&__img03 {
@@ -3227,10 +3099,7 @@
 					padding: 0;
 					filter: none;
 				}
-
 			}
-
-
 		}
 
 		.font-oswld {
@@ -3241,7 +3110,6 @@
 }
 
 .p-simulator {
-
 	&__outline {
 		background-color: #E2EFDC;
 		padding-top: 2rem;
@@ -3250,16 +3118,13 @@
 		@include media(tb) {
 			padding-bottom: 6rem;
 		}
-
 	}
 
 	%radius {
-
 		border-radius: 5px;
 
 		@include media(tb) {
 			border-radius: 10px;
-
 		}
 	}
 
@@ -3279,7 +3144,6 @@
 		@include media(pc) {
 			width: 96rem;
 		}
-
 	}
 
 	.ttl {
@@ -3311,7 +3175,6 @@
 	.inner {
 		border: 8px solid #42A434;
 		background-color: #fff;
-
 		padding: 1.5rem 0.9rem 0;
 
 		@include media(tb) {
@@ -3340,7 +3203,6 @@
 	}
 
 	.h2 {
-
 		font-size: 1rem;
 		padding-bottom: 0.3rem;
 		margin-bottom: 1.3rem;
@@ -3357,7 +3219,6 @@
 		&__num {
 			display: inline-block;
 			font-weight: bold;
-
 			font-size: 1.6rem;
 			margin-right: 1.2rem;
 
@@ -3369,9 +3230,7 @@
 			&::before {
 				content: '';
 				display: inline-block;
-
 				background-color: #42A434;
-
 				height: 1.2rem;
 				width: 0.5rem;
 				margin-right: 0.6rem;
@@ -3422,7 +3281,7 @@
 		flex-wrap: wrap;
 		padding: 0;
 
-		@include media(tb) {}
+
 
 		&__item {
 			@extend %radius;
@@ -3435,7 +3294,6 @@
 			@include media(tb) {
 				width: 49%;
 				border-width: 4px;
-
 			}
 
 			@include media(pc) {
@@ -3463,7 +3321,6 @@
 			display: block;
 			font-weight: bold;
 			line-height: 1;
-
 			font-size: 1.6rem;
 
 			@include media(tb) {
@@ -3540,7 +3397,6 @@
 
 				@include media(tb) {
 					box-shadow: 0 5px 0 #803f14;
-
 				}
 
 				&:hover {
@@ -3585,7 +3441,6 @@
 
 			@include media(pc) {
 				font-size: 3.2rem;
-
 			}
 		}
 
@@ -3600,7 +3455,6 @@
 
 			@include media(pc) {
 				font-size: 3.2rem;
-
 			}
 		}
 	}
@@ -3620,8 +3474,6 @@
 		color: #df2522;
 		background-color: #fae9e9;
 	}
-
-
 
 	.discount {
 		@extend %radius;
@@ -3831,14 +3683,12 @@
 			top: 48%;
 			transform: translateY(-50%);
 			display: block;
-
 			left: 0.7rem;
 			font-size: 1.1rem;
 
 			@include media(tb) {
 				font-size: 2.2rem;
 				left: 1.3rem;
-
 			}
 		}
 	}
@@ -3879,7 +3729,6 @@
 			box-shadow: 0 3px 0 #338028;
 			margin-bottom: 1rem;
 			display: block;
-
 			padding: 1rem 0 0.8rem;
 
 			@include media(tb) {
@@ -3918,7 +3767,6 @@
 			font-weight: bold;
 			color: #42A434;
 			line-height: 1.1;
-
 			font-size: 1.6rem;
 
 			@include media(tb) {
@@ -3937,12 +3785,10 @@
 			line-height: 1.3;
 			margin-top: 0.5rem;
 			margin-bottom: 0.5rem;
-
 			font-size: 1.1rem;
 
 			@include media(tb) {
 				font-size: 1.5rem;
-
 			}
 		}
 
@@ -3962,7 +3808,6 @@
 			}
 
 			&--short {
-
 				margin-left: 3.5rem;
 
 				@include media(tb) {
@@ -3971,7 +3816,6 @@
 			}
 
 			&--wide {
-
 				margin-left: 0;
 
 				@include media(tb) {
@@ -3983,7 +3827,6 @@
 		&__txt3 {
 			font-weight: bold;
 			display: block;
-
 			font-size: 1.4rem;
 
 			@include media(tb) {
@@ -3991,7 +3834,6 @@
 			}
 
 			&--ex {
-
 				margin-top: 0;
 
 				@include media(tb) {
@@ -4019,7 +3861,6 @@
 		}
 
 		&__btn-outer {
-
 			display: block;
 			margin-bottom: 1rem;
 
@@ -4060,7 +3901,6 @@
 				border-radius: 0 !important;
 				margin: 0 -1rem 0;
 				width: calc(100% + 2rem);
-
 			}
 		}
 
@@ -4209,7 +4049,6 @@
 
 			&--ex {
 				height: 5rem;
-
 			}
 		}
 
@@ -4268,7 +4107,6 @@
 		&__note {
 			line-height: 1.5;
 			font-size: 1rem;
-
 			display: flex;
 
 			@include media(tb) {
@@ -4366,8 +4204,6 @@
 			@include media(tb) {
 				padding: 2rem 2.5rem 1.5rem;
 				overflow: inherit;
-
-
 			}
 		}
 
@@ -4428,7 +4264,6 @@
 			}
 
 			&:nth-of-type(even) {
-
 				height: auto;
 
 				@include media(tb) {
@@ -4449,10 +4284,8 @@
 			font-size: 1.2rem;
 			font-weight: bold;
 			background-color: #FFF9D3;
-
 			text-align: left;
 			line-height: 1.2;
-
 			padding-left: 0.6rem;
 			width: auto;
 
@@ -4472,8 +4305,8 @@
 			padding-left: 0.6rem;
 			text-align: left;
 			line-height: 1.4;
-			// width: 100%;
 
+			// width: 100%;
 			@include media(tb) {
 				font-size: 1.2rem;
 				padding-left: 2rem;
@@ -4560,9 +4393,7 @@
 		margin-right: auto;
 		margin-left: auto;
 
-
 		.tit {
-
 			width: 100%;
 
 			@include media(pc) {
@@ -4593,7 +4424,6 @@
 
 		@include media(tb) {
 			margin-top: 20px;
-
 		}
 
 		.inner-m {
@@ -4605,13 +4435,11 @@
 
 			@include media(tb) {
 				padding: 40px 0;
-
 			}
 
 			@include media(pc) {
 				width: 96rem;
 			}
-
 		}
 
 		&__tit {
@@ -4629,7 +4457,6 @@
 
 			@include media(pc) {
 				font-size: 4.2rem;
-
 			}
 		}
 
@@ -4673,7 +4500,6 @@
 							}
 
 							a {
-
 								line-height: 1;
 								padding-top: 13px;
 								padding-bottom: 13px;
@@ -4681,7 +4507,6 @@
 								@include media(tb) {
 									padding-top: 20px;
 									padding-bottom: 20px;
-
 								}
 
 								span {
@@ -4711,6 +4536,11 @@
 											font-size: 12px;
 											right: 14px;
 										}
+
+										@include media(pc) {
+											margin-top: -7px;
+
+										}
 									}
 								}
 							}
@@ -4721,7 +4551,6 @@
 
 			&__icon {
 				position: absolute;
-
 				width: 50px;
 				top: -10px;
 				left: -10px;
@@ -4733,11 +4562,8 @@
 				}
 
 				@include media(pc) {
-
 					width: 100px;
 				}
-
-
 			}
 
 			&__box {
@@ -4749,7 +4575,6 @@
 				@include media(tb) {
 					flex-wrap: nowrap;
 				}
-
 			}
 
 			&__txtbox {
@@ -4770,7 +4595,7 @@
 				font-size: 2rem;
 				font-weight: 700;
 				text-align: left;
-				color: #07458d;
+				color: #07458e;
 				line-height: 1.5;
 
 				@include media(tb) {
@@ -4819,7 +4644,6 @@
 				@include media(tb) {
 					width: 230px;
 					margin-top: 0;
-
 				}
 			}
 
@@ -4828,7 +4652,6 @@
 				margin-left: 10%;
 
 				@include media(tb) {
-
 					width: 93%;
 					margin-left: 7%;
 				}
@@ -4850,7 +4673,6 @@
 
 					@include media(tb) {
 						width: 52rem;
-
 					}
 
 					@include media(pc) {
@@ -4915,7 +4737,6 @@
 				height: 180px;
 				margin-right: auto;
 				margin-left: auto;
-
 			}
 
 			@include media(pc) {
@@ -4955,7 +4776,6 @@
 					@include media(pc) {
 						width: 30%;
 					}
-
 				}
 
 				&:nth-child(5),
@@ -4976,7 +4796,6 @@
 	}
 
 	.interest {
-
 		padding: 30px 0;
 
 		@include media(tb) {
@@ -5026,5 +4845,1443 @@
 			}
 		}
 	}
+}
 
+.p-online {
+	padding-top: 2rem;
+
+	@include media(pc) {
+		padding-top: 4rem;
+	}
+
+	&__outline {}
+
+	.inner-m {
+		width: 94%;
+		margin-right: auto;
+		margin-left: auto;
+
+		@include media(pc) {
+			width: 96rem;
+		}
+	}
+
+	.sec {
+		margin-bottom: 40px;
+
+		.shop {
+
+			margin-top: 15px;
+
+			@include media(pc) {
+				margin-top: 30px;
+			}
+
+			.box {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				background-color: #f2f2f2;
+				margin-top: 20px;
+				padding: 10px;
+
+				@include media(pc) {
+					flex-wrap: nowrap;
+				}
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				.thumb {
+					width: 32%;
+					margin-right: 0;
+
+					@include media(pc) {
+						width: 200px;
+						margin-right: 15px;
+					}
+
+					&__img {
+						img {
+							width: 100%;
+						}
+					}
+
+					//__img
+				}
+
+				//thumb
+				.infomation {
+					width: 65%;
+					margin-right: inherit;
+
+					@include media(pc) {
+						width: 575px;
+						margin-right: auto;
+					}
+
+					&__tit {
+						font-weight: 700;
+						text-align: left;
+						color: #07458e;
+						font-size: 1.2rem;
+
+						@include media(pc) {
+							font-size: 2.2rem;
+						}
+
+						.btn {
+							display: inline-block;
+							margin-left: 15px;
+							line-height: 1;
+
+							a {
+								border-radius: 5px;
+								padding: 0 5px 3px;
+								line-height: 1;
+								display: inline-block;
+
+								span {
+									padding-right: 15px;
+									font-size: 1rem;
+
+									@include media(pc) {
+										font-size: 1.8rem;
+										padding-bottom: 0.2rem;
+									}
+
+									&::after {
+										@include media(pc) {
+
+											margin-top: -3px;
+										}
+									}
+
+								}
+							}
+						}
+					}
+
+					&__txt {
+						font-weight: 700;
+						text-align: left;
+						color: #555555;
+						margin-top: 2px;
+						font-size: 1rem;
+						line-height: 1.3;
+
+						@include media(pc) {
+							font-size: 1.4rem;
+							line-height: 1.5;
+						}
+
+						a {
+							font-weight: 700;
+							text-align: left;
+							color: #555555;
+							font-size: 1rem;
+
+							@include media(pc) {
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+
+				.reserve {
+					margin-right: auto;
+					width: 100%;
+					padding: 0;
+					margin-top: 10px;
+
+					@include media(pc) {
+						width: auto;
+						margin-top: 0;
+						padding: 5px 0;
+					}
+
+					.btn {
+						height: 100%;
+						width: 100%;
+
+						@include media(pc) {
+							width: 130px;
+						}
+
+						a {
+							height: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 5px;
+							width: 100%;
+							padding: 8px 10px;
+							line-height: 1;
+
+							@include media(pc) {
+								padding: 15px 10px;
+								border-radius: 10px;
+							}
+
+							span {
+								font-size: 1.4rem;
+								width: auto;
+
+								@include media(pc) {
+									font-size: 2rem;
+								}
+
+								&::after {
+									@include media(pc) {
+										margin-top: -3px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.monthly-calendar {
+
+
+			width: 100%;
+
+			@include media(pc) {
+				width: 780px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.calendar-title {
+				font-weight: 700;
+				text-align: left;
+				color: #555555;
+				line-height: 1;
+				border-top: 2px solid #e02522;
+				border-bottom: 2px solid #e02522;
+				font-size: 1.4rem;
+				padding: 10px 3%;
+				margin: 10px 0;
+
+				@include media(pc) {
+					padding: 20px 30px;
+					margin: 20px 0 10px;
+					font-size: 2.2rem;
+
+				}
+			}
+
+			.monthly-prev-next {
+				font-weight: 400;
+				text-align: left;
+				color: #59a1d8;
+				width: 100%;
+				position: relative;
+				bottom: -20px;
+				font-size: 1.6rem;
+
+				@include media(pc) {
+					font-size: 1.8rem;
+					bottom: -30px;
+				}
+
+				a {
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+
+			table {
+				font-size: 1.6rem;
+				font-weight: 400;
+				text-align: center;
+				color: #555;
+				border-collapse: collapse;
+				margin-top: 0;
+				width: 100%;
+
+				.calendar-caption {
+					font-weight: 700;
+					text-align: center;
+					color: #07458e;
+					line-height: 1;
+					font-size: 1.6rem;
+					padding: 0 0 10px;
+
+					@include media(pc) {
+						padding: 0 0 20px;
+						font-size: 3rem;
+					}
+				}
+
+				caption {
+
+					.mtssb-timetable-date,
+					.mtssb-timetable-name {
+						font-weight: 700;
+						text-align: left;
+						color: #555555;
+						line-height: 1;
+						border-bottom: 2px solid #e02522;
+						padding: 10px 3%;
+
+						font-size: 1.4rem;
+
+						@include media(pc) {
+							padding: 20px 30px;
+							font-size: 2.2rem;
+						}
+					}
+
+					.mtssb-timetable-name {
+						margin-top: 20px;
+						border-top: 2px solid #e02522;
+					}
+
+					.mtssb-timetable-date {
+						margin-bottom: 20px;
+					}
+				}
+
+				td,
+				th {
+					font-size: 1.6rem;
+					font-weight: 400;
+					text-align: center;
+					color: inherit;
+					border: 1px solid #d8d8d8;
+					line-height: 1.3;
+					border-radius: 0;
+				}
+
+				th {
+					background: rgba(0, 0, 0, 0.05);
+					padding: 1.2em 0.8em;
+
+					.week-title {
+						font-size: 1.8rem;
+						font-weight: 700;
+						text-align: center;
+						color: inherit;
+					}
+				}
+
+				td {
+
+					.calendar-mark,
+					.calendar-time-mark {
+						font-size: 2.2rem;
+						font-weight: 400;
+						text-align: center;
+						color: #555;
+					}
+
+					a {
+						font-size: 2.2rem;
+						font-weight: 400;
+						text-align: center;
+						color: #9eccef;
+						text-decoration: underline;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+
+		.content-form {
+			margin-top: 20px;
+
+			form {
+				fieldset {
+					padding: 10px 0 0 20px;
+					border: 1px solid #555555;
+					width: 100%;
+
+					@include media(pc) {
+						padding-left: 10px;
+					}
+
+					legend {
+						font-weight: 700;
+						text-align: left;
+						color: #555555;
+						font-size: 1.4rem;
+
+						@include media(pc) {
+							font-size: 2rem;
+						}
+					}
+
+					table {
+						border-top: 1px solid #555555;
+						border-left: 1px solid #555555;
+						border-collapse: collapse;
+						border-spacing: 0;
+						margin: 0 0 20px;
+						width: 98%;
+
+						tr {
+
+							td,
+							th {
+								border-right: 1px solid #555555;
+								border-bottom: 1px solid #555555;
+								padding: 15px;
+								display: block;
+								width: 100%;
+							}
+
+							th {
+								font-weight: 700;
+								text-align: left;
+								color: #555555;
+								line-height: 1;
+								vertical-align: middle;
+								background-color: #eeeeee;
+								font-size: 1.4rem;
+								padding-left: 15px;
+
+								@include media(pc) {
+									font-size: 1.6rem;
+								}
+
+								label {
+									font-weight: bold;
+								}
+
+								.indispensable {
+									font-size: 1.2rem;
+									font-weight: 700;
+									text-align: center;
+									color: #fff;
+									background-color: #e02522;
+									padding: 4px 5px;
+									display: inline-block;
+									border-radius: 2px;
+									line-height: 1;
+									margin-left: 0.5em;
+
+									@include media(tb) {
+										margin-left: 10px;
+									}
+
+									@include media(pc) {
+										font-size: 1.4rem;
+									}
+								}
+
+								.day {
+									display: block;
+									margin-top: 5px;
+									font-size: 1rem;
+
+									@include media(pc) {
+										font-size: 1.2rem;
+									}
+								}
+							}
+
+							td {
+								font-weight: 700;
+								text-align: left;
+								color: #555555;
+								font-size: 1.4rem;
+
+								@include media(pc) {
+									font-size: 1.6rem;
+								}
+							}
+						}
+					}
+				}
+
+				#booking-reservation-fieldset {
+					table {
+						tr {
+
+							td,
+							th {
+								font-weight: 700;
+								text-align: left;
+								color: #555555;
+								font-size: 1.4rem;
+
+								@include media(pc) {
+									font-size: 1.6rem;
+								}
+							}
+
+							th {
+								text-align: left;
+
+								@include media(pc) {
+									text-align: center;
+								}
+							}
+
+							td {
+								padding-left: 3%;
+							}
+						}
+					}
+				}
+
+				#booking_client-fieldset {
+					border-bottom: 0;
+					margin: 0;
+
+					table {
+						margin: 0;
+
+						tr {
+							th {
+								width: 100%;
+
+								@include media(pc) {
+									padding-left: 2%;
+									width: 30%;
+								}
+							}
+
+							td {
+								padding-left: 15px;
+								width: 100%;
+
+								@include media(pc) {
+									padding-left: 1%;
+									width: 70%;
+								}
+
+								.booking-seimei {
+									width: 4rem;
+									font-size: 1.4rem;
+									text-align: left;
+
+									@include media(pc) {
+										text-align: right;
+									}
+								}
+
+								.content-text {
+									font-size: 1.5rem;
+									font-weight: 400;
+									text-align: left;
+									color: #4C4542;
+									border: solid 1px #4d4d4d;
+									border-radius: 3px;
+									margin: 2px;
+									vertical-align: middle;
+									padding: 10px;
+
+									&.fat {
+										width: 100%;
+
+										@include media(pc) {
+											width: 66%;
+										}
+									}
+
+									&.medium {
+										width: 100%;
+
+										@include media(pc) {
+											width: 66%;
+										}
+									}
+
+									&.small-medium {
+										width: 100%;
+
+										@include media(pc) {
+											width: 25%;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				#booking-option-fieldset {
+					border-top: none;
+					padding: 0 0 0 10px;
+
+					@include media(pc) {
+						padding: 0 0 0 20px;
+					}
+
+					legend {
+						display: none;
+					}
+
+					table {
+						border-top: 0;
+
+						tr {
+							th {
+								padding-left: 2%;
+							}
+
+							td {
+								line-height: 1;
+								width: 100%;
+								margin-top: 0;
+								padding: 15px 15px 15px 1%;
+
+								@include media(pc) {
+									width: 99%;
+									margin-top: 10px;
+									padding-left: 15px;
+								}
+
+								.date-form {
+									overflow: hidden;
+									display: inline-block;
+									text-align: center;
+									position: relative;
+									border: 1px solid #4C4542;
+									border-radius: 2px;
+									background: #ffffff;
+									width: 80%;
+									margin-top: 15px;
+
+									@include media(pc) {
+										width: 20%;
+										margin-top: 0;
+									}
+
+									&:last-child {
+										margin-top: 0;
+									}
+
+									&::before {
+										top: -1px;
+										font-weight: 900;
+										font-family: "Font Awesome 6 Free";
+										content: "\f078";
+										margin-left: 0.5em;
+										display: block;
+										position: absolute;
+										top: 0.7em;
+										right: 1.5em;
+										width: 0;
+										height: 0;
+										padding: 0;
+										pointer-events: none;
+									}
+
+									select {
+										font-size: 1.6rem;
+										font-weight: 400;
+										text-align: left;
+										color: #666666;
+										width: 100%;
+										padding-right: 1em;
+										cursor: pointer;
+										text-indent: 0.01px;
+										text-overflow: ellipsis;
+										border: none;
+										outline: none;
+										background: transparent;
+										background-image: none;
+										box-shadow: none;
+										-webkit-appearance: none;
+										appearance: none;
+										padding: 8px 38px 8px 8px;
+
+										&::-ms-expand {
+											display: none;
+										}
+									}
+								}
+
+								.date-form-txt {
+									display: inline-block;
+									vertical-align: super;
+								}
+
+								.content-text {
+									font-size: 1.5rem;
+									font-weight: 400;
+									text-align: left;
+									color: #4C4542;
+									border: solid 1px #4d4d4d;
+									border-radius: 3px;
+									padding: 10px;
+								}
+
+								textarea {
+									width: 100%;
+									margin-top: 0;
+
+									@include media(pc) {
+										width: 99%;
+										margin-top: 10px;
+									}
+								}
+
+								.option-note {
+									font-size: 1.6rem;
+									font-weight: 400;
+									text-align: left;
+									color: #555555;
+									// margin-bottom: 10px;
+									display: inline-block;
+									vertical-align: super;
+									font-size: 1.4rem;
+
+									@include media(pc) {
+										font-size: 1.6rem;
+									}
+								}
+
+								.check-opt_contact {
+									input[type="radio"] {
+										font-size: 2rem;
+										line-height: 1;
+										margin-bottom: 0;
+									}
+								}
+							}
+
+							&:nth-of-type(3) {
+								th {
+									background-color: #ffdf00;
+								}
+
+								td {
+									background-color: #ffef80;
+									color: #e02522;
+									display: flex;
+									flex-wrap: wrap;
+									width: 100%;
+									margin-top: 0;
+
+									.field-item {
+										cursor: pointer;
+										font-weight: 600;
+										position: relative;
+										top: 0.2rem;
+										font-size: 2rem;
+										margin-right: 1.5rem;
+
+										@include media(tb) {
+											margin-right: 2rem;
+											font-size: 2.2rem;
+										}
+
+										input {
+											cursor: pointer;
+											width: 2rem;
+											height: 2rem;
+										}
+
+										&:last-of-type {
+											margin-right: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				#booking-confirm-fieldset {
+					table {
+						tr {
+							&:nth-child(8) {
+								display: none;
+							}
+
+							th {
+								padding-left: 15px;
+
+								@include media(pc) {
+									padding-left: 2%;
+								}
+							}
+
+							td {
+								padding-left: 15px;
+
+								@include media(pc) {
+									padding-left: 1%;
+								}
+
+								&.option-confirm-header {
+									font-weight: 700;
+									text-align: left;
+									color: #555555;
+									padding-top: 20px;
+									font-size: 1.4rem;
+
+									@include media(tb) {
+										font-size: 1.8rem;
+									}
+								}
+
+								.option-confirm-note {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.btn--back {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+
+			@include media(tb) {
+				width: 310px;
+
+			}
+
+			@include media(pc) {
+				margin-top: 25px;
+			}
+
+			.ajax-loader {
+				display: none;
+			}
+
+			a {
+				span {
+					font-size: 2rem;
+					font-weight: 700;
+					text-align: center;
+					color: #07458e;
+				}
+			}
+		}
+
+		//btn--back
+		#action-button {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			width: 80%;
+			position: relative;
+			transition: all 0.3s linear;
+
+			@include media(pc) {
+				margin-top: 25px;
+				width: 310px;
+			}
+
+			&:hover {
+				opacity: 0.7;
+			}
+
+			button[type="submit"] {
+				font-size: 2rem;
+				font-weight: 700;
+				text-align: center;
+				color: #fff;
+				width: 100%;
+				display: block;
+				border-radius: 10px;
+				padding: 15px 30px;
+				background-color: #e02522;
+				line-height: 1;
+				cursor: pointer;
+			}
+
+			&::before {
+				position: absolute;
+				content: '';
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				top: 50%;
+				right: 10%;
+				background: #fff;
+				margin-top: -7px;
+			}
+
+			&::after {
+				position: absolute;
+				content: '';
+				width: 0;
+				height: 0;
+				border: solid 4px transparent;
+				top: 50%;
+				right: 10%;
+				border-left: solid 6px #e02522;
+				margin-top: -3px;
+			}
+		}
+
+		.thanks {
+			margin-top: 20px;
+
+			@include media(pc) {
+				margin-top: 50px;
+			}
+
+			&__tit {
+				font-weight: 700;
+				text-align: center;
+				color: #ff8c00;
+				font-size: 1.8rem;
+
+				@include media(pc) {
+					font-size: 3.6rem;
+				}
+			}
+
+			&__txt {
+				font-weight: 700;
+				text-align: center;
+				color: #555555;
+				line-height: 1.8;
+				margin-top: 10px;
+				font-size: 1.4rem;
+
+				@include media(pc) {
+					font-size: 1.8rem;
+				}
+			}
+
+			.unsent {
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+				border: 2px solid #df2521;
+				padding: 15px 2%;
+				width: 100%;
+				margin-bottom: 30px;
+
+				@include media(pc) {
+					width: 70%;
+					margin-bottom: 50px;
+				}
+
+				dt {
+					font-weight: 700;
+					text-align: center;
+					color: #df2521;
+					margin-bottom: 8px;
+					font-size: 1.4rem;
+
+					@include media(pc) {
+						font-size: 1.6rem;
+					}
+				}
+
+				dd {
+					font-weight: 700;
+					text-align: left;
+					color: #555;
+					margin-bottom: 5px;
+					font-size: 1.2rem;
+
+					@include media(pc) {
+						font-size: 1.4rem;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			//unsent
+			form {
+				fieldset {
+					margin-bottom: 30px;
+					padding: 10px 0 0 10px;
+					border: 1px solid #555555;
+					width: 100%;
+
+					@include media(pc) {
+						padding-left: 20px;
+					}
+
+					legend {
+						font-weight: 700;
+						text-align: left;
+						color: #555555;
+						font-size: 1.4rem;
+
+						@include media(pc) {
+							font-size: 2rem;
+						}
+					}
+
+					table {
+						border-top: 1px solid #555555;
+						border-left: 1px solid #555555;
+						border-collapse: collapse;
+						border-spacing: 0;
+						margin: 0 0 20px;
+						width: 98%;
+
+						tr {
+
+							td,
+							th {
+								border-right: 1px solid #555555;
+								border-bottom: 1px solid #555555;
+								padding: 15px;
+								display: block;
+								width: 100%;
+							}
+
+							th {
+								font-weight: 700;
+								text-align: left;
+								color: #555555;
+								line-height: 1;
+								vertical-align: middle;
+								background-color: #eeeeee;
+								font-size: 1.4rem;
+								padding-left: 15px;
+								display: block;
+								width: 100%;
+
+								@include media(pc) {
+									width: 30%;
+									font-size: 1.6rem;
+								}
+
+								label {
+									font-weight: bold;
+									line-height: 1.3;
+								}
+
+								.indispensable {
+									font-size: 1.2rem;
+									font-weight: 700;
+									text-align: center;
+									color: #fff;
+									background-color: #e02522;
+									padding: 4px 5px;
+									display: inline-block;
+									border-radius: 2px;
+									line-height: 1;
+									margin-left: 0.5em;
+
+									@include media(pc) {
+										/* tablet-size */
+										margin-left: 10px;
+									}
+
+									@include media(pc) {
+										/* middle-size */
+										font-size: 1.4rem;
+									}
+								}
+							}
+
+							td {
+								.wpcf7-text {
+									font-size: 1.5rem;
+									font-weight: 400;
+									text-align: left;
+									color: #4C4542;
+									border: solid 1px #4d4d4d;
+									border-radius: 3px;
+									margin: 2px;
+									vertical-align: middle;
+									padding: 10px;
+
+									@include media(pc) {
+										width: 100%;
+									}
+								}
+
+								.wpcf7-list-item {
+									font-size: 1.6rem;
+									display: block;
+								}
+
+								.wpcf7-free-text {
+									font-size: 1.5rem;
+									font-weight: 400;
+									text-align: left;
+									color: #4C4542;
+									display: block;
+									width: 100%;
+									margin-top: 10px;
+									border: solid 1px #555555;
+									border-radius: 3px;
+									vertical-align: middle;
+									padding: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.btn--submit {
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+
+				@include media(pc) {
+					width: 310px;
+					margin-top: 20px;
+				}
+
+				.ajax-loader {
+					display: none;
+				}
+
+				a {
+					span {
+						font-size: 2rem;
+						font-weight: 700;
+						text-align: center;
+						color: #fff;
+					}
+				}
+			}
+
+			.btn {
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+
+				//screen-laptop
+				@include media(tb) {
+					margin-top: 25px;
+				}
+
+				//screen-laptop
+				@include media(pc) {
+					width: 310px;
+				}
+
+				a {
+					span {
+						font-size: 2rem;
+						font-weight: 700;
+						text-align: center;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.error-message {
+			text-align: center;
+			margin-top: 1rem;
+			font-size: 1.2rem;
+
+			@include media(pc) {
+				margin-top: 2rem;
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	.termsprivacy {
+		background-color: #fffad4;
+		padding-bottom: 10px;
+
+		&__tit {
+			font-size: 1.4rem;
+			font-weight: 700;
+			text-align: center;
+			color: #555555;
+			position: relative;
+			top: -10px;
+			line-height: 1.5;
+
+
+
+			@include media(pc) {
+				font-size: 1.8rem;
+			}
+		}
+
+		&__txt {
+			font-size: 1.2rem;
+			text-align: center;
+			color: #e02522;
+			line-height: 1.5;
+
+
+
+			@include media(pc) {
+				font-size: 1.4rem;
+
+			}
+
+			a {
+				color: #0000ff;
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	//termsprivacy
+	.stepbar {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 15px;
+
+		@include media(pc) {
+			margin-top: 30px;
+		}
+
+		.list {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: center;
+			background: #fff;
+			border: 1px solid #e02522;
+			border-right: none;
+			text-decoration: column nowrap;
+			position: relative;
+			height: 40px;
+			padding-left: 10px;
+			border-radius: 5px;
+			width: calc(100% / 5 - 15px);
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+
+			@include media(pc) {
+				border-radius: 10px;
+				width: calc(100% / 5 - 38px);
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				height: 60px;
+				padding-left: 15px;
+			}
+
+			&::after {
+				content: " ";
+				position: absolute;
+				display: inline-block;
+				background-image: url(../images/online/online_flow_bg_basic.png);
+				background-size: contain;
+				vertical-align: middle;
+				background-repeat: no-repeat;
+				height: 40px;
+				right: -24px;
+				width: 24px;
+				top: -1px;
+
+				@include media(tb) {
+					right: -22px;
+
+				}
+
+				@include media(pc) {
+					height: 60px;
+					right: -21px;
+					width: 21px;
+					top: -1px;
+					background-image: url(../images/online/online_flow_bg_basic-pc.png);
+				}
+			}
+
+			//after
+			&:last-child {
+				border-top-right-radius: 6px;
+				border-bottom-right-radius: 6px;
+				border-right: 1px solid #e02522;
+				padding-left: 0;
+
+				@include media(tb) {
+					border-top-right-radius: 6px;
+					border-bottom-right-radius: 6px;
+				}
+
+				@include media(pc) {
+					border-top-right-radius: 10px;
+					border-bottom-right-radius: 10px;
+				}
+
+
+				&::after {
+					display: none;
+				}
+			}
+
+			//last-child
+			&__tit {
+				text-align: center;
+
+				span {
+					font-weight: 700;
+					text-align: center;
+					color: #e02522;
+					line-height: 1.2;
+					font-size: 1.1rem;
+					display: block;
+
+					@include media(pc) {
+						font-size: 1.6rem;
+					}
+				}
+			}
+
+			//__tit
+			&.current {
+				background: #e02522;
+
+				.list__tit {
+					span {
+						color: #fff;
+					}
+				}
+
+				//__tit
+				&::after {
+					background-image: url(../images/online/online_flow_bg_active.png);
+
+					@include media(pc) {
+						background-image: url(../images/online/online_flow_bg_active-pc.png);
+					}
+				}
+			}
+
+			//current
+		}
+
+		//__list
+	}
+
+	//stepbar
+	.onlinereserver {
+		margin-top: 15px;
+
+		@include media(tb) {
+			margin-top: 30px;
+		}
+
+		&__tit {
+			font-weight: 700;
+			text-align: center;
+			color: #555555;
+			font-size: 1.4rem;
+			line-height: 1.5;
+
+			@include media(pc) {
+				font-size: 1.8rem;
+			}
+		}
+
+		&__read {
+			font-weight: 400;
+			text-align: center;
+			color: #e02522;
+			line-height: 1.5;
+			font-size: 1.2rem;
+			margin-top: 5px;
+
+			@include media(pc) {
+				font-size: 1.4rem;
+				margin-top: 10px;
+			}
+		}
+
+		&__setting {
+			border: 1px solid #e02522;
+			padding: 2.5rem 3rem;
+			text-align: center;
+			padding: 1.5rem 1rem;
+			width: 100%;
+
+			@include media(tb) {
+				margin: 3rem auto 5rem;
+				width: 74rem;
+			}
+
+			&__txt {
+				font-weight: 500;
+				text-align: center;
+				font-size: 1.4rem;
+				line-height: 1.5;
+
+				@include media(tb) {
+					font-size: 1.6rem;
+					line-height: 1.8;
+				}
+
+				&:nth-of-type(2) {
+					margin-top: 1rem;
+
+					@include media(tb) {
+						margin-top: 2rem;
+					}
+				}
+
+				a {
+					color: #07458e;
+					font-weight: 500;
+					text-decoration: underline;
+					position: relative;
+					padding-left: 0.8em;
+
+					&:hover {
+						text-decoration: none;
+					}
+
+					&::after {
+						position: absolute;
+						content: "";
+						display: block;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						margin: auto;
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 5px 0 5px 7.5px;
+						border-color: transparent transparent transparent #e02522;
+					}
+				}
+			}
+
+			&__wrap {
+				margin: 1rem auto 0;
+				text-align: center;
+				display: block;
+
+				@include media(tb) {
+					margin-top: 2rem;
+				}
+
+				p {
+					text-align: center;
+					display: inline-block;
+					font-size: 1.4rem;
+					font-weight: 500;
+					line-height: 1.5;
+
+					@include media(tb) {
+						font-size: 1.6rem;
+						line-height: 1.8;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
 }
